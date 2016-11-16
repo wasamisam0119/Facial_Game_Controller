@@ -22,7 +22,7 @@ int main()
         read(fd, buf, MAX_BUF);     // Read from the FIFO
 
         // Output recieved time (that at the sending program) and the local time (that here)
-        printf("Received %s at %s local time\n", buf, currTimeHere);    
+        printf("%s\n", buf);
         close(fd);
     }
 

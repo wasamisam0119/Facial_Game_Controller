@@ -12,20 +12,19 @@ int main()
     int fd;
     char * myfifo = "/tmp/myfifo";
 
-
     /* create the FIFO (named pipe) */
     mkfifo(myfifo, 0666);
 
     /* write "Hi" to the FIFO */
     while(1) {
         time_t timeBase = time(NULL);
-        char *currTime = ctime(&timeBase);  // 
+        char *currTime = ctime(&timeBase);
 
         fd = open(myfifo, O_WRONLY);
-        write(fd, currTime, MAX_BUF);
+        write(fd, "right now", MAX_BUF);
         close(fd);
-        printf("%s\n", currTime);
-        sleep(1);
+        printf("Right here,\n");
+        usleep(500000);
     }
     /* remove the FIFO */
     unlink(myfifo);
