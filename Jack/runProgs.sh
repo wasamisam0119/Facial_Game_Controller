@@ -1,3 +1,6 @@
 #!/bin/bash
+gcc writer.c -o writer.run
 
-open -a Terminal.app -e ./writer & open -a Terminal.app -e ./reader
+gcc reader.c -o reader.run
+
+open -a Terminal.app -e ./writer.run & open -a Terminal.app -e ./reader.run

@@ -9,8 +9,9 @@
 
 int main()
 {
-    int fd;
+    int fd, i;
     char * myfifo = "/tmp/myfifo";
+    i = 0;
 
     /* create the FIFO (named pipe) */
     mkfifo(myfifo, 0666);
@@ -23,8 +24,8 @@ int main()
         fd = open(myfifo, O_WRONLY);
         write(fd, "right now", MAX_BUF);
         close(fd);
-        printf("Right here,\n");
-        usleep(500000);
+        printf("Right here, (%d)\n", i++);
+        usleep(16667);
     }
     /* remove the FIFO */
     unlink(myfifo);
