@@ -71,10 +71,33 @@ int main()
 
             // Detect faces 
             std::vector<rectangle> faces = detector(cimg);
+            //try1 print number of faces
+            cout << "Number of faces detected: " << faces.size() << endl;
+
             // Find the pose of each face.
             std::vector<full_object_detection> shapes;
-            for (unsigned long i = 0; i < faces.size(); ++i)
-                shapes.push_back(pose_model(cimg, faces[i]));
+            //for (unsigned long i = 0; i < faces.size(); ++i)
+              //  shapes.push_back(pose_model(cimg, faces[i]));
+
+            //try2 print the coordinate
+            for (unsigned long j = 0; j < faces.size(); ++j)
+            {
+                full_object_detection shape = pose_model(cimg, faces[j]);
+                cout << "number of parts: "<< shape.num_parts() << endl;
+                cout << "pixel position of point 0: " << shape.part(0) << endl;
+                cout << "pixel position of point 1: " << shape.part(1) << endl;
+
+                cout << "pixel position of point 27: " << shape.part(27) << endl;
+                cout << "pixel position of point 30: " << shape.part(30) << endl;
+
+                cout << "pixel position of point 16: " << shape.part(16) << endl;
+                cout << "pixel position of point 15: " << shape.part(15) << endl;
+
+                // Here we just store them in shapes so we can
+                // put them on the screen.
+                shapes.push_back(pose_model(cimg, faces[j]));
+            }
+
 
             // Display it all on the screen
             win.clear_overlay();
