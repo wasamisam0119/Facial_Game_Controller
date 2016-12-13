@@ -19,12 +19,15 @@ int main()
         char *currTimeHere = ctime(&timeBase);  // Find the current time for this program
 
         fd = open(myfifo, O_RDONLY);
+        if (fd > -1){
         read(fd, buf, MAX_BUF);     // Read from the FIFO
 
         // Output recieved time (that at the sending program) and the local time (that here)
         printf("%s\n", buf);
         close(fd);
+        } else {
+            return 0;
+        }
     }
 
-    return 0;
 }

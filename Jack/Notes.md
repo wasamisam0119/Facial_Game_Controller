@@ -7,3 +7,26 @@ This is something in C that approximates a file without actually creating one.
 You create one using the `mkfifo` command, and you can then interact with it exactly as you would a file.
 There's some race condition stuff that you can get around using a `usleep` (in `unistd.h`), we'd probably use that.
 
+## 2 - DOSBox
+DOSBox is a free, open-source piece of software that allows you to emulate old DOS games.
+It's what I propose we use as the basis of the initial version of our software, as it can be run on Linux, which is a fairly easy programming environment.
+Being open-source, and written largely in C++, it should be simple to find the location of the I/O handler and extend it to take input from an external program.
+We'll test this by having a program write to a FIFO a set of pre-programmed instructions, and if we've done it right, the DOSBox environment should do what we expect.
+This is likely just making a directory, although we could have it play pac-man. Long-term, the work done on the facial recognition will get to a point where they can pipe the output to a FIFO, which will then be read into the DOSBox, and used to control a game in real-time.
+
+## 3 - Piping `/proc`
+Edgar has found a tool in Linux that allows us to pipe output without buffering
+    and without modifying the, frankly, labyrinthine source code of DOSBox's input handling file
+    and using processes that are already running
+The idea is an extension of our reasoning for using Linux in the first place, which is that in UNIX, all things are treated as files
+Hence, using Linux/bash tools, we can redirect the output of one file to the input of another, via the `/proc` folder
+Unfortunately, on the University provided Linux servers (`avon`, `bann`, `clyde`, etc.), we can't access `/proc`
+    This is likely for a good reason, but annoying nonetheless, as it would make our lives a whole lot easier
+
+## 4 - We Control The Controller
+I found during my research into piping `/proc` that redirecting the output of a running process is difficult, assuming the process has been started 'normally'.
+I also found that redirecting something to a process' input is almost straightforward.
+This is because `/proc/<process id>/fd/{0,1,2}` all symlink to the same place on a Linux system, namely `/dev/pts/n`, where n is just an integer representing which terminal window is running the process.
+Therefore, taking from one is difficult, as then you get a jumbled mess of `stdin`, `stdout`, and `stderr`.
+Putting into one, as in redirecting the output of a file to `/proc/<process id>/fd/0`, is easy by comparison, especially in Linux.
+It still requires admin privileges, but it's at least a start.
