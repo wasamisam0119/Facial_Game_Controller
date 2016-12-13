@@ -33,6 +33,7 @@
 #include <dlib/image_processing/render_face_detections.h>
 #include <dlib/image_processing.h>
 #include <dlib/gui_widgets.h>
+#include <time.h>
 
 using namespace dlib;
 using namespace std;
@@ -54,55 +55,56 @@ int main()
         frontal_face_detector detector = get_frontal_face_detector();
         shape_predictor pose_model;
         deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
+        double fps = cap.get(CV_CAP_PROP_FPS);
+    // If you do not care about backward compatibility
+    // You can use the following instead for OpenCV 3
+    // double fps = video.get(CAP_PROP_FPS);
+        cout << "Frames per second using video.get(CV_CAP_PROP_FPS) : " << fps << endl;
+     
+ 
+    // Number of frames to capture
+        int num_frames = 60;
+     
+    // Start and end times
+        time_t start, end;
 
         // Grab and process frames until the main window is closed by the user.
         while(!win.is_closed())
         {
             // Grab a frame
             cv::Mat temp;
-            cap >> temp;
+            time(&start);
+            for (int i =0;i<60;i++)
+            {
+            // Grab a frame
+                cap >> temp;
             // Turn OpenCV's Mat into something dlib can deal with.  Note that this just
             // wraps the Mat object, it doesn't copy anything.  So cimg is only valid as
             // long as temp is valid.  Also don't do anything to temp that would cause it
             // to reallocate the memory which stores the image as that will make cimg
             // contain dangling pointers.  This basically means you shouldn't modify temp
             // while using cimg.
-            cv_image<bgr_pixel> cimg(temp);
+                cv_image<bgr_pixel> cimg(temp);
 
-            // Detect faces 
-            std::vector<rectangle> faces = detector(cimg);
-            //try1 print number of faces
-            cout << "Number of faces detected: " << faces.size() << endl;
-
-            // Find the pose of each face.
-            std::vector<full_object_detection> shapes;
-            //for (unsigned long i = 0; i < faces.size(); ++i)
-              //  shapes.push_back(pose_model(cimg, faces[i]));
-
-            //try2 print the coordinate
-            for (unsigned long j = 0; j < faces.size(); ++j)
-            {
-                full_object_detection shape = pose_model(cimg, faces[j]);
-                cout << "number of parts: "<< shape.num_parts() << endl;
-                cout << "pixel position of point 0: " << shape.part(0) << endl;
-                cout << "pixel position of point 1: " << shape.part(1) << endl;
-
-                cout << "pixel position of point 27: " << shape.part(27) << endl;
-                cout << "pixel position of point 30: " << shape.part(30) << endl;
-
-                cout << "pixel position of point 16: " << shape.part(16) << endl;
-                cout << "pixel position of point 15: " << shape.part(15) << endl;
-
-                // Here we just store them in shapes so we can
-                // put them on the screen.
-                shapes.push_back(pose_model(cimg, faces[j]));
+                // Detect faces 
+                std::vector<rectangle> faces = detector(cimg);
+                // Find the pose of each face.
+                std::vector<full_object_detection> shapes;
+                for (unsigned long i = 0; i < faces.size(); ++i)
+                    shapes.push_back(pose_model(cimg, faces[i]));
+                win.clear_overlay();
+                win.set_image(cimg);
+                win.add_overlay(render_face_detections(shapes));
             }
-
-
+            time(&end);
+            double seconds = difftime (end, start);
+            cout << "Time taken : " << seconds << " seconds" << endl;
+     
+            // Calculate frames per second
+            fps  = num_frames / seconds;
+            cout << "Estimated frames per second : " << fps << endl;
             // Display it all on the screen
-            win.clear_overlay();
-            win.set_image(cimg);
-            win.add_overlay(render_face_detections(shapes));
+            
         }
     }
     catch(serialization_error& e)
