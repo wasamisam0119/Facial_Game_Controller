@@ -55,6 +55,7 @@ int main()
         shape_predictor pose_model;
         deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
         // Number of frames to capture
+        double fps = cap.get(CV_CAP_PROP_FPS);
         int num_frames = 60;
      
         // Start and end times
