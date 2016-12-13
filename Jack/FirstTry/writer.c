@@ -21,14 +21,17 @@ int main()
         time_t timeBase = time(NULL);
         char *currTime = ctime(&timeBase);
 
-        fd = open(myfifo, O_WRONLY);
-        write(fd, "right now", MAX_BUF);
-        close(fd);
-        printf("Right here, (%d)\n", i++);
-        usleep(16667);
-    }
-    /* remove the FIFO */
-    unlink(myfifo);
 
-    return 0;
+        fd = open(myfifo, O_WRONLY);
+        if (fd > -1) {
+            write(fd, "right now", MAX_BUF);
+            close(fd);
+            printf("Right here, (%d)\n", i++);
+            usleep(16667);
+        } else {
+            unlink(myfifo);
+
+            return 0;
+        }
+    }
 }
