@@ -1,4 +1,4 @@
-#G52GRP Project Group 27  
+G52GRP Project Group 27  
 --------------
 
 ## Project Overview  
