@@ -1,0 +1,9 @@
+Number of faces detected: 1
+Time taken : 26 seconds
+Estimated frames per second : 4.61538
+Time taken : 24 seconds
+Estimated frames per second : 5
+Time taken : 25 seconds
+Estimated frames per second : 4.8
+Time taken : 18 seconds
+Estimated frames per second : 6.66667
