@@ -23,8 +23,9 @@ The controller will be made to interact with DosBox in order to play retro games
 
    
 Installation
--------------
-##How to compile Dlib ?  
+-------------   
+
+###How to compile Dlib ?  
 <font size=3> 1.Download a copy from github</font>   
 >git clone https://github.com/davisking/dlib.git
 
