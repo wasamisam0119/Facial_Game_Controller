@@ -13,7 +13,7 @@ The controller will be made to interact with DosBox in order to play retro games
 * Python3.4 or higher
 
 ## Installation  
-###Face Landmark Detection
+### Face Landmark Detection
 #### Compile Dlib  
 1.Download a copy from github
 `git clone https://github.com/davisking/dlib.git`
