@@ -19,13 +19,13 @@ The controller will be made to interact with DosBox in order to play retro games
 * xdotool 3.20141006.1 or higher
 
 ## Installation
-### Face Landmark Detection
+### 1.Face Landmark Detection
 #### Compile Dlib
-1. Download a copy from github
+* Download a copy from github
 
 > git clone https://github.com/davisking/dlib.git
 
-2. Build examples ( macOS / Linux )
+* Build examples ( macOS / Linux )
 
 > cd dlib/examples
 
@@ -53,5 +53,5 @@ The controller will be made to interact with DosBox in order to play retro games
 
 Now we can run a speed-up real time face landmark, get the coordinates of 68 points and get the frames per second (fps) .
 
-
+### 2. Game Emulator
 
