@@ -71,3 +71,18 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 
 [1]:	https://sourceforge.net/projects/boost/files/boost/1.62.0/
 [2]:	http://dlib.net/
+
+### 3. xdotool
+* Our controller will work by obtaining output from the controller and then use xdotools to simulate the keyboard commands onto the DosBox emulator
+
+* In order to use the xdotools script, you will need to be using a linux machine
+
+* To install xdotools, it depends on the type of linux OS that your machine is running
+
+> For Debian and Ubuntu, you can use apt-get install xdotool
+> FreeBSD has xdotools in x11/xdotool
+> Fedora can use yum install xdotool
+> MAC OS can use sudo port install xdotool
+> OpenSUSE can use zypper install xdotool
+
+* To run our xdotools script, you need to open it with chmod 777
