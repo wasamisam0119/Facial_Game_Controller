@@ -30,3 +30,16 @@ This is because `/proc/<process id>/fd/{0,1,2}` all symlink to the same place on
 Therefore, taking from one is difficult, as then you get a jumbled mess of `stdin`, `stdout`, and `stderr`.
 Putting into one, as in redirecting the output of a file to `/proc/<process id>/fd/0`, is easy by comparison, especially in Linux.
 It still requires admin privileges, but it's at least a start.
+
+## 4.5 - Control Testing
+In testing, this approach almost works. The output of the `create` program does appear in the terminal window of the `run` program, however `run` does not respond.
+This is likely to do again with the fact that in a standard bash process, `stdin`, `stdout`, and `stderr` all symlink to the same location.
+Eventually, the thought occurred that using C for this testing was unnecessary, as the testing is to ascertain how well I/O redirection can be used.
+Testing `.sh` files reveals that the use of `echo` statements allows for really simple redirection, so why it doesn't work as well in C is beyond me; the putchar() function's supposed to do the same thing as echo, isn't it?
+
+## 5 - Integrating into DOSbox
+There is, it turns out, a Linux utility called `xdotool`. This is a tool that lets you emulate keyboard and mouse input in X11, and is essentially a wrapper for built-in X11 tools.
+`xdotool` has an extensive man page, which will require a lot of reading.
+
+## 6 - xdotool to the rescue
+xdotool works well for pacman, via a while loop that substitutes `w` for `up`, `s` for `down`, etc.
