@@ -47,9 +47,8 @@ change the dlib/examples/webcam_face_pose_ex  to our G52GRP_TEAM27_2016_DANGEROU
 
 Rebuild the examples
 
-    `cmake --build . --config Release`
-
-    `./webcam_face_pose_ex`
+    `cmake --build . --config Release
+    ./webcam_face_pose_ex`
 
 Now we can run a speed-up real time face landmark, get the coordinates of 68 points and the frames per second (fps) .
 
