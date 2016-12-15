@@ -54,4 +54,16 @@ The controller will be made to interact with DosBox in order to play retro games
 Now we can run a speed-up real time face landmark, get the coordinates of 68 points and get the frames per second (fps) .
 
 ### 2. Game Emulator
+* Download and install DosBox for your machine: http://www.dosbox.com/download.php?main=1
 
+> After installing Dosbox, you need to mount the DosBox folder, via opening up the DosBox exe and run the command mount c c:\dosgames where dosgames where your MSDOS games are stored
+
+> Then go into the mounted folder by typing c: into the DosBox terminal and type dir to see what folders are present
+
+> After choosing a game which is present in the directory (e.g. pacman) you can go into that folder by doing cd pacman
+
+> To run the gane then just type the name of the executable in order to run the game
+
+> For more information on how to run DosBox go to http://www.pcworld.com/article/239399/how_to_use_dosbox_to_play_classic_games.html
+
+> You can download different MSDOS games from http://www.myabandonware.com/. Once downloaded, just move the games into your mounted folder
