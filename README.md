@@ -12,9 +12,9 @@ The controller will be made to interact with DosBox in order to play retro games
 
 ## Requiements  
 
-* C++ [Boost Library](https://sourceforge.net/projects/boost/files/boost/1.62.0/)  version 1.6.2     
+* C++ [Boost Library][1]  version 1.6.2     
 * Cmake at least 2.8.4     
-* C++ [Dlib](http://dlib.net/) version 19.2   
+* C++ [Dlib][2] version 19.2   
 * Xquartz
 * Python3.4 or higher
 * xdotool 3.20141006.1 or higher
@@ -23,36 +23,29 @@ The controller will be made to interact with DosBox in order to play retro games
 ### 1. Face Landmark Detection
 #### Compile Dlib
 * Download a copy from github
-
-> git clone https://github.com/davisking/dlib.git
+	`git clone https://github.com/davisking/dlib.git `
 
 * Build examples ( macOS / Linux )
+	```cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;`
 
-> cd dlib/examples
+	`cmake ..`
 
-> mkdir build
-
-> cd build
-
-> cmake .. 
-
-> cmake --build . --config Release
+	` cmake --build . --config Release`
 
 #### Run Dlib’s facial landmark detector
-> cd examples/build/
+`cd examples/build/`
 
-> //Download the face landmark model  from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+Download the face landmark model  from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 
-> ./webcam_face_pose_ex
+`./webcam_face_pose_ex`
 
 #### Run our facial landmark detector
-> change the dlib/examples/webcam_face_pose_ex  to our G52GRP_TEAM27_2016_DANGEROUS_DUCKS/FaceDetect-dlib/webcam_face_pose_ex.cpp
+change the dlib/examples/webcam_face_pose_ex  to our G52GRP_TEAM27_2016_DANGEROUS_DUCKS/FaceDetect-dlib/webcam_face_pose_ex.cpp
 
-> //Rebuild the examples
+Rebuild the examples
+` cmake --build . --config Release`
 
-> cmake --build . --config Release
-
-> ./webcam_face_pose_ex
+`./webcam\_face\_pose\_ex`
 
 Now we can run a speed-up real time face landmark, get the coordinates of 68 points and the frames per second (fps) .
 
@@ -60,14 +53,17 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 ### 2. Game Emulator
 * Download and install DosBox for your machine: http://www.dosbox.com/download.php?main=1
 
-> After installing Dosbox, you need to mount the DosBox folder, via opening up the DosBox exe and run the command mount c c:\dosgames where dosgames where your MSDOS games are stored
+ - After installing Dosbox, you need to mount the DosBox folder, via opening up the DosBox exe and run the command mount c c:\dosgames where dosgames where your MSDOS games are stored
 
-> Then go into the mounted folder by typing c: into the DosBox terminal and type dir to see what folders are present
+- Then go into the mounted folder by typing c: into the DosBox terminal and type dir to see what folders are present
 
-> After choosing a game which is present in the directory (e.g. pacman) you can go into that folder by doing cd pacman
+- After choosing a game which is present in the directory (e.g. pacman) you can go into that folder by doing cd pacman
 
-> To run the gane then just type the name of the executable in order to run the game
+- To run the gane then just type the name of the executable in order to run the game
 
-> For more information on how to run DosBox go to http://www.pcworld.com/article/239399/how_to_use_dosbox_to_play_classic_games.html
+- For more information on how to run DosBox go to http://www.pcworld.com/article/239399/how_to_use_dosbox_to_play_classic_games.html
 
-> You can download different MSDOS games from http://www.myabandonware.com/. Once downloaded, just move the games into your mounted folder
+- You can download different MSDOS games from http://www.myabandonware.com/. Once downloaded, just move the games into your mounted folder
+
+[1]:	https://sourceforge.net/projects/boost/files/boost/1.62.0/
+[2]:	http://dlib.net/
