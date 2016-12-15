@@ -30,9 +30,7 @@ The controller will be made to interact with DosBox in order to play retro games
 -Build examples ( macOS / Linux )
 
     cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;
-
     cmake ..
-
     cmake --build . --config Release
 
 ##### Run Dlib’s facial landmark detector
