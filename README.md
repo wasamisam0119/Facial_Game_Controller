@@ -11,9 +11,15 @@ The controller will be made to interact with DosBox in order to play retro games
 * C++ [Dlib](http://dlib.net/) version 19.2   
 * Xquartz
 * Python3.4 or higher
+* xdotool 3.20141006.1 or higher
 
 ## Installation  
 ### Face Landmark Detection
 #### Compile Dlib  
 1.Download a copy from github
 `git clone https://github.com/davisking/dlib.git`
+
+
+## Extra project resources
+* Trello Board : https://trello.com/gameface5
+* Google Drive document storage: https://drive.google.com/drive/folders/0B5RShekiv6-4czBlVEpybmN0XzQ?usp=sharing
