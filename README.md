@@ -87,4 +87,4 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 > MAC OS can use sudo port install xdotool
 > OpenSUSE can use zypper install xdotool
 
-* To run our xdotools script, you need to open it with chmod 777
+* In order for xdotool to run, you need to run chmod +x xdostuff.sh first. This allows it to execute.
