@@ -23,16 +23,19 @@ The controller will be made to interact with DosBox in order to play retro games
 ### 1. Face Landmark Detection
 #### Compile Dlib
 * Download a copy from github
-	`git clone https://github.com/davisking/dlib.git `
+
+`git clone https://github.com/davisking/dlib.git`
 
 * Build examples ( macOS / Linux )
-	```cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;`
 
-	`cmake ..`
+```cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;`
 
-	` cmake --build . --config Release`
+`cmake ..`
+
+`cmake --build . --config Release`
 
 #### Run Dlib’s facial landmark detector
+
 `cd examples/build/`
 
 Download the face landmark model  from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
@@ -43,9 +46,10 @@ Download the face landmark model  from http://dlib.net/files/shape_predictor_68_
 change the dlib/examples/webcam_face_pose_ex  to our G52GRP_TEAM27_2016_DANGEROUS_DUCKS/FaceDetect-dlib/webcam_face_pose_ex.cpp
 
 Rebuild the examples
-` cmake --build . --config Release`
 
-`./webcam\_face\_pose\_ex`
+`cmake --build . --config Release`
+
+`./webcam_face_pose_ex`
 
 Now we can run a speed-up real time face landmark, get the coordinates of 68 points and the frames per second (fps) .
 
@@ -53,7 +57,7 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 ### 2. Game Emulator
 * Download and install DosBox for your machine: http://www.dosbox.com/download.php?main=1
 
- - After installing Dosbox, you need to mount the DosBox folder, via opening up the DosBox exe and run the command mount c c:\dosgames where dosgames where your MSDOS games are stored
+- After installing Dosbox, you need to mount the DosBox folder, via opening up the DosBox exe and run the command mount c c:\dosgames where dosgames where your MSDOS games are stored
 
 - Then go into the mounted folder by typing c: into the DosBox terminal and type dir to see what folders are present
 
