@@ -7,6 +7,7 @@
 
 ## Project Overview  
 Create a controller that uses facial tracking in use for different video games.
+
 The controller will be made to interact with DosBox in order to play retro games such as pacman, mortal kombat etc.
 
 ## Requiements  
@@ -19,7 +20,7 @@ The controller will be made to interact with DosBox in order to play retro games
 * xdotool 3.20141006.1 or higher
 
 ## Installation
-### 1.Face Landmark Detection
+### 1. Face Landmark Detection
 #### Compile Dlib
 * Download a copy from github
 
@@ -51,7 +52,10 @@ The controller will be made to interact with DosBox in order to play retro games
 
 > cmake --build . --config Release
 
-Now we can run a speed-up real time face landmark, get the coordinates of 68 points and get the frames per second (fps) .
+> ./webcam_face_pose_ex
+
+Now we can run a speed-up real time face landmark, get the coordinates of 68 points and the frames per second (fps) .
+
 
 ### 2. Game Emulator
 * Download and install DosBox for your machine: http://www.dosbox.com/download.php?main=1
