@@ -40,6 +40,7 @@ The controller will be made to interact with DosBox in order to play retro games
     cd examples/build/
 
 -Download the face landmark model  from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+
 -Uncompress model to build directory
 
 -Run webcam file
