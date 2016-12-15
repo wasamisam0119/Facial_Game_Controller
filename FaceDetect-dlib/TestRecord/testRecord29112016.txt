@@ -1,3 +1,5 @@
+/*Test print real time coordinates*/
+
 Number of faces detected: 1
 number of parts: 68
 pixel position of point 0: (568, 378)
