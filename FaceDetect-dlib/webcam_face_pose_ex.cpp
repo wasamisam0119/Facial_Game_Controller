@@ -35,11 +35,9 @@
 #include <dlib/gui_widgets.h>
 #include <opencv2/imgproc/imgproc.hpp>
 
-#define BIGVISION_RENDER_FACE_H_
- 
 #include <dlib/image_processing/frontal_face_detector.h>
 
-
+#define BIGVISION_RENDER_FACE_H_
 #define FACE_DOWNSAMPLE_RATIO 2
 #define SKIP_FRAMES 1
 
@@ -63,7 +61,8 @@ int main()
         frontal_face_detector detector = get_frontal_face_detector();
         shape_predictor pose_model;
         deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
-        // Number of frames to capture
+        
+        // Number of frames to capture  --Sam
         double fps = cap.get(CV_CAP_PROP_FPS);
         int num_frames = 120;
      
@@ -72,13 +71,14 @@ int main()
         int countt = 0;
         std::vector<rectangle> faces;
         int count=0;
+        
         // Grab and process frames until the main window is closed by the user.
         while(!win.is_closed())
         {
             // Grab a frame
             cv::Mat temp;
 
-            //yehan add 1/12/2016
+            //Resize frame
             cv::Mat temp_small, temp_display;
             time(&start);
             for (int i = 0; i < 120; ++i)
@@ -92,9 +92,9 @@ int main()
                 // contain dangling pointers.  This basically means you shouldn't modify temp
                 // while using cimg.
 
-                //Resize image for face detection -yehan
+                //Resize image for face detection to decrease the resolution to spped up-Yehan
                 cv::resize(temp, temp_small, cv::Size(), 1.0/FACE_DOWNSAMPLE_RATIO, 1.0/FACE_DOWNSAMPLE_RATIO);
-                // Change to dlib's image format. No memory is copied.  -yehan
+                // Change to dlib's image format. No memory is copied.  -Yehan
                 cv_image<bgr_pixel> cimg_small(temp_small);
 
                 
@@ -105,21 +105,26 @@ int main()
                 {
                     faces = detector(cimg_small);
                 }
-                //std::vector<rectangle> faces = detector(cimg_small);
-                //try1 print number of faces
+                
+                //Print number of faces 
+                /*We decrease it to cature one person in order to speed up
+                   decrese the pyramid_down size in "frontal_face_detector.h":
+                    typedef object_detector<scan_fhog_pyramid<pyramid_down<6> > > frontal_face_detector;
+                    Change 6 to 2
+                */
                 if (count<1)
                 {
                 cout << "Number of faces detected: " << faces.size() << endl;
                 ++count;
                 }
-                // Find the pose of each face.
+                
+                //Find the pose of each face.
                 std::vector<full_object_detection> shapes;
-                //for (unsigned long i = 0; i < faces.size(); ++i)
-                //  shapes.push_back(pose_model(cimg, faces[i]));
 
-                //try2 print the coordinate
+              
                 for (unsigned long j = 0; j < faces.size(); ++j)
                 {
+                    //Zoom out
                     rectangle r(
                     (long)(faces[j].left() * FACE_DOWNSAMPLE_RATIO),
                     (long)(faces[j].top() * FACE_DOWNSAMPLE_RATIO),
@@ -129,6 +134,7 @@ int main()
 
                     full_object_detection shape = pose_model(cimg, r);
                     /*
+                    //Print the coordinate  there are 68 points on face
                     cout << "number of parts: "<< shape.num_parts() << endl;
                     cout << "pixel position of point 0: " << shape.part(0) << endl;
                     cout << "pixel position of point 1: " << shape.part(1) << endl;
@@ -139,6 +145,7 @@ int main()
                     cout << "pixel position of point 16: " << shape.part(16) << endl;
                     cout << "pixel position of point 15: " << shape.part(15) << endl;
                     */
+
                     // Here we just store them in shapes so we can
                     // put them on the screen.
                     shapes.push_back(pose_model(cimg, r));
@@ -149,9 +156,11 @@ int main()
                 win.set_image(cimg);
                 win.add_overlay(render_face_detections(shapes));
             }
+
             time(&end);
             double seconds = difftime (end, start);
             cout << "Time taken : " << seconds << " seconds" << endl;
+            
             // Calculate frames per second
             fps  = num_frames / seconds;
             cout << "Estimated frames per second : " << fps << endl;
