@@ -25,7 +25,7 @@ The controller will be made to interact with DosBox in order to play retro games
 * Download a copy from github
 
     `git clone https://github.com/davisking/dlib.git`
-
+    
 * Build examples ( macOS / Linux )
 
     `cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;`
