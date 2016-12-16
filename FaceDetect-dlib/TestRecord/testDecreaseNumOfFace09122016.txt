@@ -1,0 +1,32 @@
+/* speed up by decresing the pyramid_down size in "frontal_face_detector.h":
+typedef object_detector<scan_fhog_pyramid<pyramid_down<6> > > frontal_face_detector;
+Change 6 to 2*/
+Number of faces detected: 1
+Time taken : 10 seconds
+Estimated frames per second : 6
+Time taken : 12 seconds
+Estimated frames per second : 5
+Time taken : 11 seconds
+Estimated frames per second : 5.45455
+Time taken : 12 seconds
+Estimated frames per second : 5
+Time taken : 10 seconds
+Estimated frames per second : 6
+Time taken : 9 seconds
+Estimated frames per second : 6.66667
+Time taken : 11 seconds
+Estimated frames per second : 5.45455
+Time taken : 10 seconds
+Estimated frames per second : 6
+Time taken : 12 seconds
+Estimated frames per second : 5
+Time taken : 12 seconds
+Estimated frames per second : 5
+Time taken : 10 seconds
+Estimated frames per second : 6
+Time taken : 12 seconds
+Estimated frames per second : 5
+Time taken : 10 seconds
+Estimated frames per second : 6
+Time taken : 10 seconds
+Estimated frames per second : 6

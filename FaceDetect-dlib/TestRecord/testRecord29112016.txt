@@ -1,0 +1,757 @@
+/*Test print real time coordinates*/
+
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (568, 378)
+pixel position of point 1: (571, 411)
+pixel position of point 27: (703, 357)
+pixel position of point 30: (701, 407)
+pixel position of point 16: (853, 375)
+pixel position of point 15: (848, 407)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (571, 377)
+pixel position of point 1: (572, 410)
+pixel position of point 27: (704, 360)
+pixel position of point 30: (703, 408)
+pixel position of point 16: (849, 373)
+pixel position of point 15: (846, 406)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (565, 388)
+pixel position of point 1: (568, 420)
+pixel position of point 27: (705, 360)
+pixel position of point 30: (703, 406)
+pixel position of point 16: (852, 382)
+pixel position of point 15: (847, 413)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (543, 339)
+pixel position of point 1: (546, 380)
+pixel position of point 27: (697, 313)
+pixel position of point 30: (696, 410)
+pixel position of point 16: (845, 329)
+pixel position of point 15: (846, 369)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (536, 341)
+pixel position of point 1: (540, 379)
+pixel position of point 27: (677, 305)
+pixel position of point 30: (679, 392)
+pixel position of point 16: (838, 322)
+pixel position of point 15: (837, 361)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (478, 295)
+pixel position of point 1: (486, 330)
+pixel position of point 27: (600, 231)
+pixel position of point 30: (605, 309)
+pixel position of point 16: (758, 244)
+pixel position of point 15: (761, 281)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (473, 294)
+pixel position of point 1: (480, 328)
+pixel position of point 27: (582, 235)
+pixel position of point 30: (589, 308)
+pixel position of point 16: (740, 230)
+pixel position of point 15: (745, 268)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (465, 298)
+pixel position of point 1: (471, 331)
+pixel position of point 27: (552, 242)
+pixel position of point 30: (556, 319)
+pixel position of point 16: (722, 222)
+pixel position of point 15: (729, 259)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 289)
+pixel position of point 1: (458, 322)
+pixel position of point 27: (551, 240)
+pixel position of point 30: (555, 316)
+pixel position of point 16: (716, 237)
+pixel position of point 15: (722, 276)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (567, 274)
+pixel position of point 1: (570, 309)
+pixel position of point 27: (705, 247)
+pixel position of point 30: (703, 320)
+pixel position of point 16: (840, 279)
+pixel position of point 15: (839, 314)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (682, 318)
+pixel position of point 1: (681, 348)
+pixel position of point 27: (827, 310)
+pixel position of point 30: (823, 362)
+pixel position of point 16: (933, 321)
+pixel position of point 15: (930, 354)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (687, 271)
+pixel position of point 1: (682, 309)
+pixel position of point 27: (847, 286)
+pixel position of point 30: (833, 369)
+pixel position of point 16: (961, 333)
+pixel position of point 15: (952, 367)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (565, 320)
+pixel position of point 1: (568, 349)
+pixel position of point 27: (678, 299)
+pixel position of point 30: (677, 355)
+pixel position of point 16: (824, 300)
+pixel position of point 15: (824, 333)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (468, 309)
+pixel position of point 1: (472, 341)
+pixel position of point 27: (563, 279)
+pixel position of point 30: (562, 363)
+pixel position of point 16: (735, 271)
+pixel position of point 15: (736, 310)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 307)
+pixel position of point 1: (459, 340)
+pixel position of point 27: (560, 272)
+pixel position of point 30: (565, 349)
+pixel position of point 16: (718, 267)
+pixel position of point 15: (722, 303)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (527, 295)
+pixel position of point 1: (530, 329)
+pixel position of point 27: (651, 283)
+pixel position of point 30: (649, 373)
+pixel position of point 16: (795, 296)
+pixel position of point 15: (792, 332)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (606, 339)
+pixel position of point 1: (610, 373)
+pixel position of point 27: (736, 326)
+pixel position of point 30: (740, 394)
+pixel position of point 16: (872, 320)
+pixel position of point 15: (871, 355)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (631, 306)
+pixel position of point 1: (630, 344)
+pixel position of point 27: (787, 317)
+pixel position of point 30: (781, 398)
+pixel position of point 16: (915, 336)
+pixel position of point 15: (908, 372)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (680, 281)
+pixel position of point 1: (675, 320)
+pixel position of point 27: (833, 289)
+pixel position of point 30: (821, 369)
+pixel position of point 16: (968, 333)
+pixel position of point 15: (961, 368)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (692, 311)
+pixel position of point 1: (690, 343)
+pixel position of point 27: (827, 296)
+pixel position of point 30: (820, 354)
+pixel position of point 16: (962, 331)
+pixel position of point 15: (958, 364)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (666, 284)
+pixel position of point 1: (663, 319)
+pixel position of point 27: (786, 289)
+pixel position of point 30: (768, 362)
+pixel position of point 16: (942, 323)
+pixel position of point 15: (933, 359)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (598, 294)
+pixel position of point 1: (596, 329)
+pixel position of point 27: (712, 288)
+pixel position of point 30: (701, 366)
+pixel position of point 16: (873, 305)
+pixel position of point 15: (869, 344)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (577, 278)
+pixel position of point 1: (576, 314)
+pixel position of point 27: (689, 265)
+pixel position of point 30: (678, 349)
+pixel position of point 16: (852, 279)
+pixel position of point 15: (848, 319)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (367, 330)
+pixel position of point 1: (374, 364)
+pixel position of point 27: (482, 296)
+pixel position of point 30: (490, 383)
+pixel position of point 16: (642, 273)
+pixel position of point 15: (647, 312)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (345, 324)
+pixel position of point 1: (352, 358)
+pixel position of point 27: (457, 284)
+pixel position of point 30: (468, 368)
+pixel position of point 16: (607, 258)
+pixel position of point 15: (614, 295)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (326, 273)
+pixel position of point 1: (335, 307)
+pixel position of point 27: (447, 219)
+pixel position of point 30: (459, 289)
+pixel position of point 16: (590, 215)
+pixel position of point 15: (595, 251)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (548, 271)
+pixel position of point 1: (551, 308)
+pixel position of point 27: (693, 247)
+pixel position of point 30: (696, 326)
+pixel position of point 16: (824, 268)
+pixel position of point 15: (822, 304)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (668, 298)
+pixel position of point 1: (670, 333)
+pixel position of point 27: (834, 290)
+pixel position of point 30: (850, 343)
+pixel position of point 16: (908, 300)
+pixel position of point 15: (910, 327)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (648, 263)
+pixel position of point 1: (647, 305)
+pixel position of point 27: (857, 277)
+pixel position of point 30: (870, 343)
+pixel position of point 16: (907, 301)
+pixel position of point 15: (906, 326)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (685, 320)
+pixel position of point 1: (687, 347)
+pixel position of point 27: (805, 284)
+pixel position of point 30: (813, 332)
+pixel position of point 16: (893, 293)
+pixel position of point 15: (896, 317)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (675, 303)
+pixel position of point 1: (677, 334)
+pixel position of point 27: (808, 273)
+pixel position of point 30: (819, 332)
+pixel position of point 16: (922, 286)
+pixel position of point 15: (924, 318)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (588, 288)
+pixel position of point 1: (593, 321)
+pixel position of point 27: (739, 269)
+pixel position of point 30: (743, 323)
+pixel position of point 16: (856, 269)
+pixel position of point 15: (854, 303)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (576, 254)
+pixel position of point 1: (574, 290)
+pixel position of point 27: (721, 247)
+pixel position of point 30: (715, 317)
+pixel position of point 16: (853, 282)
+pixel position of point 15: (848, 315)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (560, 242)
+pixel position of point 1: (551, 272)
+pixel position of point 27: (633, 240)
+pixel position of point 30: (603, 312)
+pixel position of point 16: (821, 278)
+pixel position of point 15: (813, 318)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (543, 256)
+pixel position of point 1: (537, 284)
+pixel position of point 27: (602, 254)
+pixel position of point 30: (571, 319)
+pixel position of point 16: (802, 278)
+pixel position of point 15: (795, 317)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (542, 265)
+pixel position of point 1: (537, 291)
+pixel position of point 27: (594, 259)
+pixel position of point 30: (565, 319)
+pixel position of point 16: (793, 283)
+pixel position of point 15: (788, 322)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (550, 248)
+pixel position of point 1: (542, 274)
+pixel position of point 27: (587, 259)
+pixel position of point 30: (554, 320)
+pixel position of point 16: (789, 277)
+pixel position of point 15: (782, 316)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (539, 266)
+pixel position of point 1: (532, 292)
+pixel position of point 27: (590, 269)
+pixel position of point 30: (563, 324)
+pixel position of point 16: (786, 285)
+pixel position of point 15: (782, 323)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (558, 268)
+pixel position of point 1: (549, 292)
+pixel position of point 27: (600, 278)
+pixel position of point 30: (569, 329)
+pixel position of point 16: (791, 291)
+pixel position of point 15: (785, 326)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (552, 266)
+pixel position of point 1: (551, 299)
+pixel position of point 27: (663, 243)
+pixel position of point 30: (654, 320)
+pixel position of point 16: (822, 271)
+pixel position of point 15: (819, 307)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (575, 298)
+pixel position of point 1: (576, 327)
+pixel position of point 27: (708, 280)
+pixel position of point 30: (707, 316)
+pixel position of point 16: (831, 298)
+pixel position of point 15: (830, 326)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (576, 269)
+pixel position of point 1: (576, 303)
+pixel position of point 27: (721, 258)
+pixel position of point 30: (721, 309)
+pixel position of point 16: (841, 273)
+pixel position of point 15: (838, 305)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (564, 247)
+pixel position of point 1: (565, 285)
+pixel position of point 27: (719, 231)
+pixel position of point 30: (716, 300)
+pixel position of point 16: (849, 267)
+pixel position of point 15: (846, 302)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (568, 249)
+pixel position of point 1: (569, 287)
+pixel position of point 27: (719, 234)
+pixel position of point 30: (716, 303)
+pixel position of point 16: (848, 264)
+pixel position of point 15: (844, 300)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (598, 284)
+pixel position of point 1: (597, 315)
+pixel position of point 27: (741, 278)
+pixel position of point 30: (739, 329)
+pixel position of point 16: (855, 301)
+pixel position of point 15: (850, 333)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (647, 234)
+pixel position of point 1: (632, 271)
+pixel position of point 27: (791, 293)
+pixel position of point 30: (762, 369)
+pixel position of point 16: (901, 374)
+pixel position of point 15: (882, 405)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (666, 233)
+pixel position of point 1: (646, 266)
+pixel position of point 27: (804, 296)
+pixel position of point 30: (764, 366)
+pixel position of point 16: (916, 400)
+pixel position of point 15: (894, 428)
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (590, 249)
+pixel position of point 1: (587, 286)
+pixel position of point 27: (734, 244)
+pixel position of point 30: (724, 315)
+pixel position of point 16: (866, 292)
+pixel position of point 15: (858, 327)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (565, 264)
+pixel position of point 1: (568, 301)
+pixel position of point 27: (703, 237)
+pixel position of point 30: (699, 305)
+pixel position of point 16: (839, 284)
+pixel position of point 15: (832, 318)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 354)
+pixel position of point 1: (470, 382)
+pixel position of point 27: (550, 257)
+pixel position of point 30: (579, 328)
+pixel position of point 16: (694, 207)
+pixel position of point 15: (709, 243)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (432, 353)
+pixel position of point 1: (449, 381)
+pixel position of point 27: (533, 261)
+pixel position of point 30: (563, 338)
+pixel position of point 16: (688, 209)
+pixel position of point 15: (704, 243)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (435, 352)
+pixel position of point 1: (450, 380)
+pixel position of point 27: (535, 267)
+pixel position of point 30: (564, 343)
+pixel position of point 16: (683, 216)
+pixel position of point 15: (697, 252)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (464, 341)
+pixel position of point 1: (481, 370)
+pixel position of point 27: (580, 261)
+pixel position of point 30: (606, 339)
+pixel position of point 16: (712, 211)
+pixel position of point 15: (727, 246)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (494, 309)
+pixel position of point 1: (503, 340)
+pixel position of point 27: (625, 248)
+pixel position of point 30: (640, 326)
+pixel position of point 16: (753, 238)
+pixel position of point 15: (761, 272)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (502, 298)
+pixel position of point 1: (510, 330)
+pixel position of point 27: (634, 247)
+pixel position of point 30: (644, 325)
+pixel position of point 16: (768, 248)
+pixel position of point 15: (772, 281)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (501, 288)
+pixel position of point 1: (508, 321)
+pixel position of point 27: (635, 238)
+pixel position of point 30: (643, 316)
+pixel position of point 16: (765, 252)
+pixel position of point 15: (768, 285)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (503, 291)
+pixel position of point 1: (509, 325)
+pixel position of point 27: (637, 240)
+pixel position of point 30: (643, 318)
+pixel position of point 16: (769, 262)
+pixel position of point 15: (769, 296)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (609, 255)
+pixel position of point 1: (607, 291)
+pixel position of point 27: (738, 251)
+pixel position of point 30: (726, 327)
+pixel position of point 16: (888, 285)
+pixel position of point 15: (883, 322)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (655, 273)
+pixel position of point 1: (652, 306)
+pixel position of point 27: (764, 261)
+pixel position of point 30: (750, 337)
+pixel position of point 16: (917, 291)
+pixel position of point 15: (914, 328)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (726, 288)
+pixel position of point 1: (720, 321)
+pixel position of point 27: (838, 282)
+pixel position of point 30: (820, 356)
+pixel position of point 16: (996, 326)
+pixel position of point 15: (990, 362)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (768, 296)
+pixel position of point 1: (761, 328)
+pixel position of point 27: (872, 291)
+pixel position of point 30: (849, 363)
+pixel position of point 16: (1042, 343)
+pixel position of point 15: (1031, 380)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (768, 292)
+pixel position of point 1: (760, 323)
+pixel position of point 27: (869, 292)
+pixel position of point 30: (843, 364)
+pixel position of point 16: (1039, 338)
+pixel position of point 15: (1029, 375)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (734, 285)
+pixel position of point 1: (723, 313)
+pixel position of point 27: (819, 292)
+pixel position of point 30: (788, 359)
+pixel position of point 16: (995, 344)
+pixel position of point 15: (986, 380)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (731, 277)
+pixel position of point 1: (720, 307)
+pixel position of point 27: (811, 283)
+pixel position of point 30: (779, 354)
+pixel position of point 16: (990, 329)
+pixel position of point 15: (980, 366)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (592, 247)
+pixel position of point 1: (583, 276)
+pixel position of point 27: (670, 240)
+pixel position of point 30: (645, 317)
+pixel position of point 16: (848, 275)
+pixel position of point 15: (841, 313)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (464, 251)
+pixel position of point 1: (460, 283)
+pixel position of point 27: (554, 238)
+pixel position of point 30: (539, 316)
+pixel position of point 16: (732, 256)
+pixel position of point 15: (727, 295)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (410, 276)
+pixel position of point 1: (411, 307)
+pixel position of point 27: (493, 248)
+pixel position of point 30: (490, 326)
+pixel position of point 16: (655, 235)
+pixel position of point 15: (659, 273)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (411, 274)
+pixel position of point 1: (412, 304)
+pixel position of point 27: (494, 247)
+pixel position of point 30: (489, 326)
+pixel position of point 16: (657, 234)
+pixel position of point 15: (660, 273)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (430, 266)
+pixel position of point 1: (430, 298)
+pixel position of point 27: (516, 246)
+pixel position of point 30: (511, 323)
+pixel position of point 16: (691, 241)
+pixel position of point 15: (689, 280)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (433, 274)
+pixel position of point 1: (433, 303)
+pixel position of point 27: (518, 246)
+pixel position of point 30: (513, 323)
+pixel position of point 16: (683, 243)
+pixel position of point 15: (684, 281)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 283)
+pixel position of point 1: (453, 313)
+pixel position of point 27: (532, 259)
+pixel position of point 30: (528, 340)
+pixel position of point 16: (707, 249)
+pixel position of point 15: (707, 289)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (460, 288)
+pixel position of point 1: (461, 319)
+pixel position of point 27: (541, 263)
+pixel position of point 30: (533, 345)
+pixel position of point 16: (714, 254)
+pixel position of point 15: (714, 293)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (472, 288)
+pixel position of point 1: (474, 317)
+pixel position of point 27: (556, 263)
+pixel position of point 30: (553, 325)
+pixel position of point 16: (725, 256)
+pixel position of point 15: (726, 290)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (482, 256)
+pixel position of point 1: (482, 289)
+pixel position of point 27: (584, 239)
+pixel position of point 30: (576, 317)
+pixel position of point 16: (742, 251)
+pixel position of point 15: (739, 287)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (488, 269)
+pixel position of point 1: (491, 305)
+pixel position of point 27: (619, 266)
+pixel position of point 30: (616, 341)
+pixel position of point 16: (749, 279)
+pixel position of point 15: (742, 313)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (493, 258)
+pixel position of point 1: (497, 292)
+pixel position of point 27: (624, 227)
+pixel position of point 30: (626, 290)
+pixel position of point 16: (750, 252)
+pixel position of point 15: (749, 285)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (487, 268)
+pixel position of point 1: (491, 300)
+pixel position of point 27: (621, 228)
+pixel position of point 30: (625, 300)
+pixel position of point 16: (746, 252)
+pixel position of point 15: (745, 284)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (487, 275)
+pixel position of point 1: (492, 308)
+pixel position of point 27: (622, 243)
+pixel position of point 30: (626, 309)
+pixel position of point 16: (744, 260)
+pixel position of point 15: (742, 294)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (487, 253)
+pixel position of point 1: (487, 287)
+pixel position of point 27: (625, 225)
+pixel position of point 30: (625, 296)
+pixel position of point 16: (748, 259)
+pixel position of point 15: (747, 291)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (498, 258)
+pixel position of point 1: (503, 293)
+pixel position of point 27: (640, 222)
+pixel position of point 30: (644, 294)
+pixel position of point 16: (759, 239)
+pixel position of point 15: (761, 272)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (506, 265)
+pixel position of point 1: (507, 299)
+pixel position of point 27: (646, 242)
+pixel position of point 30: (643, 316)
+pixel position of point 16: (760, 273)
+pixel position of point 15: (758, 306)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (520, 285)
+pixel position of point 1: (518, 312)
+pixel position of point 27: (652, 274)
+pixel position of point 30: (645, 328)
+pixel position of point 16: (762, 304)
+pixel position of point 15: (755, 333)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (530, 241)
+pixel position of point 1: (525, 274)
+pixel position of point 27: (669, 256)
+pixel position of point 30: (652, 331)
+pixel position of point 16: (780, 315)
+pixel position of point 15: (769, 343)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (531, 243)
+pixel position of point 1: (527, 278)
+pixel position of point 27: (668, 255)
+pixel position of point 30: (653, 331)
+pixel position of point 16: (786, 307)
+pixel position of point 15: (777, 336)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (530, 278)
+pixel position of point 1: (529, 308)
+pixel position of point 27: (665, 278)
+pixel position of point 30: (659, 332)
+pixel position of point 16: (774, 299)
+pixel position of point 15: (766, 329)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (527, 247)
+pixel position of point 1: (523, 282)
+pixel position of point 27: (673, 256)
+pixel position of point 30: (661, 328)
+pixel position of point 16: (788, 304)
+pixel position of point 15: (778, 334)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (546, 260)
+pixel position of point 1: (543, 292)
+pixel position of point 27: (687, 260)
+pixel position of point 30: (674, 324)
+pixel position of point 16: (797, 317)
+pixel position of point 15: (787, 346)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (548, 244)
+pixel position of point 1: (543, 279)
+pixel position of point 27: (694, 251)
+pixel position of point 30: (682, 323)
+pixel position of point 16: (799, 310)
+pixel position of point 15: (789, 339)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (565, 281)
+pixel position of point 1: (562, 309)
+pixel position of point 27: (704, 283)
+pixel position of point 30: (697, 333)
+pixel position of point 16: (798, 310)
+pixel position of point 15: (791, 338)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (560, 243)
+pixel position of point 1: (553, 280)
+pixel position of point 27: (711, 256)
+pixel position of point 30: (699, 331)
+pixel position of point 16: (807, 305)
+pixel position of point 15: (800, 335)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (543, 270)
+pixel position of point 1: (541, 303)
+pixel position of point 27: (691, 254)
+pixel position of point 30: (684, 328)
+pixel position of point 16: (802, 317)
+pixel position of point 15: (796, 346)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (527, 296)
+pixel position of point 1: (530, 324)
+pixel position of point 27: (661, 266)
+pixel position of point 30: (664, 321)
+pixel position of point 16: (767, 283)
+pixel position of point 15: (763, 314)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (517, 303)
+pixel position of point 1: (519, 329)
+pixel position of point 27: (646, 273)
+pixel position of point 30: (648, 309)
+pixel position of point 16: (758, 294)
+pixel position of point 15: (755, 320)
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (502, 299)
+pixel position of point 1: (507, 327)
+pixel position of point 27: (639, 271)
+pixel position of point 30: (643, 308)
+pixel position of point 16: (753, 287)
+pixel position of point 15: (752, 316)

@@ -1,0 +1,1736 @@
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (543, 300)
+pixel position of point 1: (541, 330)
+pixel position of point 27: (661, 267)
+pixel position of point 30: (659, 321)
+pixel position of point 16: (781, 329)
+pixel position of point 15: (780, 361)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (541, 307)
+pixel position of point 1: (539, 337)
+pixel position of point 27: (656, 284)
+pixel position of point 30: (653, 319)
+pixel position of point 16: (774, 323)
+pixel position of point 15: (775, 352)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (526, 300)
+pixel position of point 1: (526, 332)
+pixel position of point 27: (654, 269)
+pixel position of point 30: (653, 319)
+pixel position of point 16: (789, 330)
+pixel position of point 15: (787, 364)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (517, 290)
+pixel position of point 1: (515, 322)
+pixel position of point 27: (650, 270)
+pixel position of point 30: (647, 326)
+pixel position of point 16: (783, 329)
+pixel position of point 15: (780, 361)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (515, 291)
+pixel position of point 1: (514, 325)
+pixel position of point 27: (648, 266)
+pixel position of point 30: (647, 321)
+pixel position of point 16: (764, 321)
+pixel position of point 15: (763, 354)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (474, 290)
+pixel position of point 1: (483, 321)
+pixel position of point 27: (589, 242)
+pixel position of point 30: (603, 303)
+pixel position of point 16: (710, 237)
+pixel position of point 15: (717, 271)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (454, 301)
+pixel position of point 1: (467, 331)
+pixel position of point 27: (548, 229)
+pixel position of point 30: (564, 297)
+pixel position of point 16: (699, 205)
+pixel position of point 15: (710, 242)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (423, 281)
+pixel position of point 1: (432, 312)
+pixel position of point 27: (532, 225)
+pixel position of point 30: (542, 293)
+pixel position of point 16: (662, 217)
+pixel position of point 15: (668, 250)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (451, 265)
+pixel position of point 1: (456, 296)
+pixel position of point 27: (565, 225)
+pixel position of point 30: (572, 293)
+pixel position of point 16: (693, 226)
+pixel position of point 15: (697, 259)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (492, 279)
+pixel position of point 1: (496, 312)
+pixel position of point 27: (631, 252)
+pixel position of point 30: (637, 328)
+pixel position of point 16: (739, 263)
+pixel position of point 15: (738, 294)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (526, 284)
+pixel position of point 1: (527, 317)
+pixel position of point 27: (653, 246)
+pixel position of point 30: (653, 312)
+pixel position of point 16: (778, 301)
+pixel position of point 15: (776, 333)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (520, 274)
+pixel position of point 1: (524, 308)
+pixel position of point 27: (657, 247)
+pixel position of point 30: (659, 322)
+pixel position of point 16: (767, 274)
+pixel position of point 15: (766, 305)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (516, 273)
+pixel position of point 1: (520, 306)
+pixel position of point 27: (652, 245)
+pixel position of point 30: (654, 320)
+pixel position of point 16: (765, 265)
+pixel position of point 15: (764, 296)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (489, 282)
+pixel position of point 1: (493, 315)
+pixel position of point 27: (603, 263)
+pixel position of point 30: (601, 344)
+pixel position of point 16: (749, 265)
+pixel position of point 15: (748, 300)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (484, 283)
+pixel position of point 1: (488, 314)
+pixel position of point 27: (596, 256)
+pixel position of point 30: (598, 335)
+pixel position of point 16: (731, 262)
+pixel position of point 15: (730, 295)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (479, 279)
+pixel position of point 1: (484, 311)
+pixel position of point 27: (594, 251)
+pixel position of point 30: (597, 330)
+pixel position of point 16: (724, 260)
+pixel position of point 15: (725, 294)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (468, 292)
+pixel position of point 1: (474, 325)
+pixel position of point 27: (596, 261)
+pixel position of point 30: (601, 333)
+pixel position of point 16: (721, 274)
+pixel position of point 15: (720, 307)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (490, 282)
+pixel position of point 1: (494, 316)
+pixel position of point 27: (622, 253)
+pixel position of point 30: (624, 331)
+pixel position of point 16: (747, 276)
+pixel position of point 15: (746, 308)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (500, 292)
+pixel position of point 1: (506, 324)
+pixel position of point 27: (627, 264)
+pixel position of point 30: (635, 332)
+pixel position of point 16: (738, 276)
+pixel position of point 15: (737, 306)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (521, 279)
+pixel position of point 1: (525, 313)
+pixel position of point 27: (656, 257)
+pixel position of point 30: (660, 335)
+pixel position of point 16: (769, 272)
+pixel position of point 15: (766, 305)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (520, 275)
+pixel position of point 1: (523, 309)
+pixel position of point 27: (658, 273)
+pixel position of point 30: (658, 347)
+pixel position of point 16: (765, 281)
+pixel position of point 15: (760, 313)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (518, 268)
+pixel position of point 1: (521, 302)
+pixel position of point 27: (653, 252)
+pixel position of point 30: (654, 334)
+pixel position of point 16: (765, 266)
+pixel position of point 15: (761, 298)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (523, 283)
+pixel position of point 1: (519, 321)
+pixel position of point 27: (646, 291)
+pixel position of point 30: (631, 378)
+pixel position of point 16: (847, 297)
+pixel position of point 15: (842, 344)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (494, 278)
+pixel position of point 1: (497, 311)
+pixel position of point 27: (616, 264)
+pixel position of point 30: (616, 344)
+pixel position of point 16: (744, 276)
+pixel position of point 15: (742, 308)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (502, 325)
+pixel position of point 1: (504, 353)
+pixel position of point 27: (610, 313)
+pixel position of point 30: (607, 379)
+pixel position of point 16: (770, 304)
+pixel position of point 15: (771, 341)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (491, 315)
+pixel position of point 1: (495, 344)
+pixel position of point 27: (588, 293)
+pixel position of point 30: (594, 368)
+pixel position of point 16: (728, 277)
+pixel position of point 15: (732, 310)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (497, 289)
+pixel position of point 1: (499, 320)
+pixel position of point 27: (625, 261)
+pixel position of point 30: (623, 334)
+pixel position of point 16: (761, 295)
+pixel position of point 15: (758, 327)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (529, 230)
+pixel position of point 1: (529, 264)
+pixel position of point 27: (665, 215)
+pixel position of point 30: (662, 285)
+pixel position of point 16: (779, 246)
+pixel position of point 15: (774, 277)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (514, 247)
+pixel position of point 1: (516, 280)
+pixel position of point 27: (642, 220)
+pixel position of point 30: (638, 290)
+pixel position of point 16: (756, 252)
+pixel position of point 15: (753, 284)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (491, 298)
+pixel position of point 1: (497, 329)
+pixel position of point 27: (617, 266)
+pixel position of point 30: (621, 338)
+pixel position of point 16: (731, 285)
+pixel position of point 15: (731, 317)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (492, 264)
+pixel position of point 1: (496, 294)
+pixel position of point 27: (613, 231)
+pixel position of point 30: (614, 302)
+pixel position of point 16: (735, 247)
+pixel position of point 15: (736, 279)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (505, 262)
+pixel position of point 1: (510, 292)
+pixel position of point 27: (627, 232)
+pixel position of point 30: (629, 304)
+pixel position of point 16: (744, 247)
+pixel position of point 15: (745, 277)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (519, 268)
+pixel position of point 1: (519, 304)
+pixel position of point 27: (646, 263)
+pixel position of point 30: (640, 345)
+pixel position of point 16: (802, 286)
+pixel position of point 15: (800, 326)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (528, 275)
+pixel position of point 1: (530, 308)
+pixel position of point 27: (654, 256)
+pixel position of point 30: (650, 332)
+pixel position of point 16: (770, 278)
+pixel position of point 15: (767, 310)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (534, 277)
+pixel position of point 1: (536, 309)
+pixel position of point 27: (655, 258)
+pixel position of point 30: (649, 334)
+pixel position of point 16: (779, 286)
+pixel position of point 15: (775, 317)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (496, 299)
+pixel position of point 1: (506, 330)
+pixel position of point 27: (588, 254)
+pixel position of point 30: (592, 321)
+pixel position of point 16: (748, 249)
+pixel position of point 15: (751, 287)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (502, 250)
+pixel position of point 1: (505, 282)
+pixel position of point 27: (623, 227)
+pixel position of point 30: (621, 299)
+pixel position of point 16: (741, 243)
+pixel position of point 15: (739, 275)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (534, 272)
+pixel position of point 1: (533, 302)
+pixel position of point 27: (661, 259)
+pixel position of point 30: (651, 334)
+pixel position of point 16: (776, 297)
+pixel position of point 15: (772, 327)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (538, 281)
+pixel position of point 1: (542, 313)
+pixel position of point 27: (649, 241)
+pixel position of point 30: (653, 314)
+pixel position of point 16: (772, 250)
+pixel position of point 15: (774, 285)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (505, 275)
+pixel position of point 1: (510, 306)
+pixel position of point 27: (620, 248)
+pixel position of point 30: (620, 325)
+pixel position of point 16: (751, 258)
+pixel position of point 15: (750, 291)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (548, 238)
+pixel position of point 1: (541, 271)
+pixel position of point 27: (676, 259)
+pixel position of point 30: (653, 331)
+pixel position of point 16: (795, 318)
+pixel position of point 15: (781, 347)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (584, 245)
+pixel position of point 1: (582, 274)
+pixel position of point 27: (700, 241)
+pixel position of point 30: (689, 295)
+pixel position of point 16: (823, 278)
+pixel position of point 15: (813, 309)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (732, 269)
+pixel position of point 1: (731, 298)
+pixel position of point 27: (853, 270)
+pixel position of point 30: (845, 325)
+pixel position of point 16: (997, 296)
+pixel position of point 15: (988, 331)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (370, 141)
+pixel position of point 1: (375, 177)
+pixel position of point 27: (488, 101)
+pixel position of point 30: (492, 185)
+pixel position of point 16: (652, 98)
+pixel position of point 15: (656, 139)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (440, 170)
+pixel position of point 1: (442, 201)
+pixel position of point 27: (553, 141)
+pixel position of point 30: (554, 210)
+pixel position of point 16: (683, 153)
+pixel position of point 15: (684, 186)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (470, 225)
+pixel position of point 1: (472, 259)
+pixel position of point 27: (589, 200)
+pixel position of point 30: (591, 284)
+pixel position of point 16: (711, 221)
+pixel position of point 15: (713, 258)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (441, 237)
+pixel position of point 1: (448, 271)
+pixel position of point 27: (583, 205)
+pixel position of point 30: (594, 271)
+pixel position of point 16: (724, 181)
+pixel position of point 15: (730, 218)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (446, 237)
+pixel position of point 1: (452, 271)
+pixel position of point 27: (576, 204)
+pixel position of point 30: (587, 275)
+pixel position of point 16: (693, 209)
+pixel position of point 15: (699, 242)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (455, 246)
+pixel position of point 1: (460, 276)
+pixel position of point 27: (568, 192)
+pixel position of point 30: (574, 242)
+pixel position of point 16: (682, 214)
+pixel position of point 15: (688, 247)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (455, 218)
+pixel position of point 1: (457, 245)
+pixel position of point 27: (528, 196)
+pixel position of point 30: (524, 256)
+pixel position of point 16: (680, 188)
+pixel position of point 15: (681, 223)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (461, 217)
+pixel position of point 1: (461, 239)
+pixel position of point 27: (522, 200)
+pixel position of point 30: (513, 260)
+pixel position of point 16: (683, 194)
+pixel position of point 15: (683, 228)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (456, 192)
+pixel position of point 1: (454, 219)
+pixel position of point 27: (523, 203)
+pixel position of point 30: (513, 262)
+pixel position of point 16: (684, 181)
+pixel position of point 15: (686, 216)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (456, 219)
+pixel position of point 1: (454, 245)
+pixel position of point 27: (532, 198)
+pixel position of point 30: (527, 261)
+pixel position of point 16: (684, 188)
+pixel position of point 15: (687, 223)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (462, 223)
+pixel position of point 1: (466, 251)
+pixel position of point 27: (564, 190)
+pixel position of point 30: (568, 252)
+pixel position of point 16: (689, 190)
+pixel position of point 15: (691, 222)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (477, 235)
+pixel position of point 1: (481, 268)
+pixel position of point 27: (623, 197)
+pixel position of point 30: (635, 277)
+pixel position of point 16: (710, 204)
+pixel position of point 15: (714, 236)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (497, 258)
+pixel position of point 1: (503, 286)
+pixel position of point 27: (610, 202)
+pixel position of point 30: (627, 238)
+pixel position of point 16: (718, 205)
+pixel position of point 15: (725, 233)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (524, 222)
+pixel position of point 1: (528, 254)
+pixel position of point 27: (659, 188)
+pixel position of point 30: (670, 239)
+pixel position of point 16: (751, 193)
+pixel position of point 15: (755, 221)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (463, 212)
+pixel position of point 1: (461, 248)
+pixel position of point 27: (618, 218)
+pixel position of point 30: (619, 283)
+pixel position of point 16: (707, 228)
+pixel position of point 15: (707, 259)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (479, 225)
+pixel position of point 1: (480, 253)
+pixel position of point 27: (577, 190)
+pixel position of point 30: (575, 252)
+pixel position of point 16: (710, 212)
+pixel position of point 15: (710, 245)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (470, 220)
+pixel position of point 1: (470, 248)
+pixel position of point 27: (561, 195)
+pixel position of point 30: (559, 260)
+pixel position of point 16: (697, 205)
+pixel position of point 15: (698, 238)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (456, 209)
+pixel position of point 1: (455, 235)
+pixel position of point 27: (526, 197)
+pixel position of point 30: (517, 258)
+pixel position of point 16: (685, 197)
+pixel position of point 15: (684, 232)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (454, 213)
+pixel position of point 1: (453, 237)
+pixel position of point 27: (511, 196)
+pixel position of point 30: (495, 253)
+pixel position of point 16: (673, 200)
+pixel position of point 15: (672, 235)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (462, 213)
+pixel position of point 1: (461, 239)
+pixel position of point 27: (544, 197)
+pixel position of point 30: (539, 261)
+pixel position of point 16: (688, 203)
+pixel position of point 15: (688, 236)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (460, 215)
+pixel position of point 1: (459, 243)
+pixel position of point 27: (548, 198)
+pixel position of point 30: (542, 263)
+pixel position of point 16: (688, 203)
+pixel position of point 15: (689, 237)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (463, 225)
+pixel position of point 1: (465, 255)
+pixel position of point 27: (562, 204)
+pixel position of point 30: (561, 273)
+pixel position of point 16: (689, 207)
+pixel position of point 15: (691, 240)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (458, 236)
+pixel position of point 1: (461, 271)
+pixel position of point 27: (573, 209)
+pixel position of point 30: (570, 294)
+pixel position of point 16: (710, 223)
+pixel position of point 15: (711, 262)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (465, 230)
+pixel position of point 1: (465, 266)
+pixel position of point 27: (593, 231)
+pixel position of point 30: (588, 314)
+pixel position of point 16: (717, 243)
+pixel position of point 15: (716, 279)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (464, 234)
+pixel position of point 1: (468, 264)
+pixel position of point 27: (598, 199)
+pixel position of point 30: (606, 268)
+pixel position of point 16: (703, 212)
+pixel position of point 15: (706, 242)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 214)
+pixel position of point 1: (457, 249)
+pixel position of point 27: (596, 183)
+pixel position of point 30: (603, 248)
+pixel position of point 16: (706, 189)
+pixel position of point 15: (708, 221)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (432, 215)
+pixel position of point 1: (433, 253)
+pixel position of point 27: (584, 188)
+pixel position of point 30: (587, 280)
+pixel position of point 16: (731, 202)
+pixel position of point 15: (731, 238)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (432, 238)
+pixel position of point 1: (436, 275)
+pixel position of point 27: (586, 222)
+pixel position of point 30: (590, 296)
+pixel position of point 16: (733, 221)
+pixel position of point 15: (733, 257)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (423, 247)
+pixel position of point 1: (426, 290)
+pixel position of point 27: (592, 224)
+pixel position of point 30: (594, 326)
+pixel position of point 16: (741, 225)
+pixel position of point 15: (739, 265)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (458, 272)
+pixel position of point 1: (463, 311)
+pixel position of point 27: (608, 240)
+pixel position of point 30: (611, 331)
+pixel position of point 16: (750, 248)
+pixel position of point 15: (750, 284)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (468, 273)
+pixel position of point 1: (473, 309)
+pixel position of point 27: (609, 243)
+pixel position of point 30: (611, 318)
+pixel position of point 16: (740, 267)
+pixel position of point 15: (736, 302)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (477, 257)
+pixel position of point 1: (480, 289)
+pixel position of point 27: (605, 230)
+pixel position of point 30: (603, 302)
+pixel position of point 16: (729, 246)
+pixel position of point 15: (728, 279)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (482, 263)
+pixel position of point 1: (483, 293)
+pixel position of point 27: (602, 232)
+pixel position of point 30: (602, 300)
+pixel position of point 16: (728, 250)
+pixel position of point 15: (728, 281)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (486, 248)
+pixel position of point 1: (482, 284)
+pixel position of point 27: (613, 256)
+pixel position of point 30: (607, 340)
+pixel position of point 16: (758, 274)
+pixel position of point 15: (753, 310)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (441, 336)
+pixel position of point 1: (450, 366)
+pixel position of point 27: (550, 273)
+pixel position of point 30: (565, 350)
+pixel position of point 16: (682, 255)
+pixel position of point 15: (693, 291)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (464, 271)
+pixel position of point 1: (461, 303)
+pixel position of point 27: (586, 253)
+pixel position of point 30: (581, 328)
+pixel position of point 16: (695, 290)
+pixel position of point 15: (693, 323)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (481, 271)
+pixel position of point 1: (479, 298)
+pixel position of point 27: (583, 254)
+pixel position of point 30: (577, 297)
+pixel position of point 16: (683, 285)
+pixel position of point 15: (681, 314)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (459, 295)
+pixel position of point 1: (465, 323)
+pixel position of point 27: (560, 250)
+pixel position of point 30: (569, 302)
+pixel position of point 16: (678, 253)
+pixel position of point 15: (684, 284)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 2
+number of parts: 68
+pixel position of point 0: (467, 293)
+pixel position of point 1: (471, 320)
+pixel position of point 27: (563, 251)
+pixel position of point 30: (569, 300)
+pixel position of point 16: (675, 257)
+pixel position of point 15: (680, 286)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+number of parts: 68
+pixel position of point 0: (557, 512)
+pixel position of point 1: (557, 533)
+pixel position of point 27: (654, 519)
+pixel position of point 30: (659, 556)
+pixel position of point 16: (693, 520)
+pixel position of point 15: (694, 535)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (450, 269)
+pixel position of point 1: (451, 306)
+pixel position of point 27: (592, 251)
+pixel position of point 30: (601, 330)
+pixel position of point 16: (683, 264)
+pixel position of point 15: (687, 296)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (506, 288)
+pixel position of point 1: (502, 321)
+pixel position of point 27: (628, 271)
+pixel position of point 30: (620, 349)
+pixel position of point 16: (774, 310)
+pixel position of point 15: (772, 350)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (606, 288)
+pixel position of point 1: (609, 316)
+pixel position of point 27: (716, 256)
+pixel position of point 30: (716, 310)
+pixel position of point 16: (823, 277)
+pixel position of point 15: (822, 305)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (598, 274)
+pixel position of point 1: (596, 307)
+pixel position of point 27: (712, 249)
+pixel position of point 30: (711, 333)
+pixel position of point 16: (817, 279)
+pixel position of point 15: (817, 314)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (543, 274)
+pixel position of point 1: (539, 307)
+pixel position of point 27: (655, 258)
+pixel position of point 30: (646, 337)
+pixel position of point 16: (790, 314)
+pixel position of point 15: (787, 349)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (519, 260)
+pixel position of point 1: (511, 289)
+pixel position of point 27: (605, 274)
+pixel position of point 30: (586, 330)
+pixel position of point 16: (756, 303)
+pixel position of point 15: (751, 337)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (515, 259)
+pixel position of point 1: (507, 288)
+pixel position of point 27: (622, 273)
+pixel position of point 30: (606, 328)
+pixel position of point 16: (732, 320)
+pixel position of point 15: (721, 350)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (518, 259)
+pixel position of point 1: (512, 286)
+pixel position of point 27: (622, 253)
+pixel position of point 30: (608, 307)
+pixel position of point 16: (729, 306)
+pixel position of point 15: (723, 333)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (527, 294)
+pixel position of point 1: (529, 321)
+pixel position of point 27: (635, 260)
+pixel position of point 30: (631, 317)
+pixel position of point 16: (775, 303)
+pixel position of point 15: (772, 334)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (526, 259)
+pixel position of point 1: (520, 288)
+pixel position of point 27: (632, 275)
+pixel position of point 30: (614, 336)
+pixel position of point 16: (748, 314)
+pixel position of point 15: (739, 344)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (558, 299)
+pixel position of point 1: (549, 331)
+pixel position of point 27: (661, 304)
+pixel position of point 30: (644, 375)
+pixel position of point 16: (805, 349)
+pixel position of point 15: (799, 384)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (570, 294)
+pixel position of point 1: (561, 327)
+pixel position of point 27: (673, 305)
+pixel position of point 30: (654, 371)
+pixel position of point 16: (832, 351)
+pixel position of point 15: (826, 388)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (579, 269)
+pixel position of point 1: (575, 301)
+pixel position of point 27: (709, 269)
+pixel position of point 30: (702, 340)
+pixel position of point 16: (818, 305)
+pixel position of point 15: (813, 335)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (587, 295)
+pixel position of point 1: (589, 332)
+pixel position of point 27: (724, 281)
+pixel position of point 30: (724, 366)
+pixel position of point 16: (854, 299)
+pixel position of point 15: (852, 334)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (602, 288)
+pixel position of point 1: (604, 324)
+pixel position of point 27: (734, 272)
+pixel position of point 30: (732, 358)
+pixel position of point 16: (870, 290)
+pixel position of point 15: (867, 327)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (608, 287)
+pixel position of point 1: (611, 325)
+pixel position of point 27: (745, 277)
+pixel position of point 30: (744, 353)
+pixel position of point 16: (881, 286)
+pixel position of point 15: (879, 324)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (613, 298)
+pixel position of point 1: (615, 333)
+pixel position of point 27: (742, 290)
+pixel position of point 30: (742, 359)
+pixel position of point 16: (875, 291)
+pixel position of point 15: (874, 325)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (582, 263)
+pixel position of point 1: (578, 295)
+pixel position of point 27: (693, 267)
+pixel position of point 30: (679, 342)
+pixel position of point 16: (830, 289)
+pixel position of point 15: (823, 324)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (530, 259)
+pixel position of point 1: (529, 287)
+pixel position of point 27: (635, 243)
+pixel position of point 30: (628, 306)
+pixel position of point 16: (756, 270)
+pixel position of point 15: (753, 300)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (485, 282)
+pixel position of point 1: (486, 312)
+pixel position of point 27: (593, 257)
+pixel position of point 30: (590, 316)
+pixel position of point 16: (711, 285)
+pixel position of point 15: (709, 315)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (478, 293)
+pixel position of point 1: (479, 320)
+pixel position of point 27: (580, 263)
+pixel position of point 30: (576, 308)
+pixel position of point 16: (694, 314)
+pixel position of point 15: (689, 342)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (428, 270)
+pixel position of point 1: (425, 307)
+pixel position of point 27: (557, 284)
+pixel position of point 30: (549, 369)
+pixel position of point 16: (673, 297)
+pixel position of point 15: (670, 333)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (433, 276)
+pixel position of point 1: (434, 307)
+pixel position of point 27: (542, 263)
+pixel position of point 30: (535, 327)
+pixel position of point 16: (658, 282)
+pixel position of point 15: (656, 312)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (480, 289)
+pixel position of point 1: (485, 319)
+pixel position of point 27: (585, 273)
+pixel position of point 30: (588, 347)
+pixel position of point 16: (726, 262)
+pixel position of point 15: (727, 297)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (507, 291)
+pixel position of point 1: (512, 321)
+pixel position of point 27: (617, 266)
+pixel position of point 30: (616, 339)
+pixel position of point 16: (757, 278)
+pixel position of point 15: (756, 310)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (567, 282)
+pixel position of point 1: (569, 313)
+pixel position of point 27: (676, 261)
+pixel position of point 30: (674, 334)
+pixel position of point 16: (817, 265)
+pixel position of point 15: (819, 299)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (581, 282)
+pixel position of point 1: (583, 314)
+pixel position of point 27: (687, 268)
+pixel position of point 30: (686, 343)
+pixel position of point 16: (819, 268)
+pixel position of point 15: (818, 303)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (589, 290)
+pixel position of point 1: (589, 321)
+pixel position of point 27: (695, 274)
+pixel position of point 30: (688, 349)
+pixel position of point 16: (830, 294)
+pixel position of point 15: (827, 328)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (557, 257)
+pixel position of point 1: (550, 290)
+pixel position of point 27: (687, 262)
+pixel position of point 30: (671, 338)
+pixel position of point 16: (804, 326)
+pixel position of point 15: (792, 355)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (503, 263)
+pixel position of point 1: (500, 297)
+pixel position of point 27: (637, 264)
+pixel position of point 30: (625, 341)
+pixel position of point 16: (753, 314)
+pixel position of point 15: (745, 344)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (517, 277)
+pixel position of point 1: (519, 309)
+pixel position of point 27: (639, 259)
+pixel position of point 30: (633, 333)
+pixel position of point 16: (762, 281)
+pixel position of point 15: (758, 315)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (516, 278)
+pixel position of point 1: (517, 309)
+pixel position of point 27: (641, 248)
+pixel position of point 30: (639, 311)
+pixel position of point 16: (758, 297)
+pixel position of point 15: (756, 325)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (509, 266)
+pixel position of point 1: (509, 297)
+pixel position of point 27: (639, 244)
+pixel position of point 30: (633, 313)
+pixel position of point 16: (752, 289)
+pixel position of point 15: (748, 318)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (495, 277)
+pixel position of point 1: (497, 308)
+pixel position of point 27: (620, 260)
+pixel position of point 30: (613, 331)
+pixel position of point 16: (742, 289)
+pixel position of point 15: (738, 320)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (492, 278)
+pixel position of point 1: (494, 309)
+pixel position of point 27: (615, 257)
+pixel position of point 30: (610, 326)
+pixel position of point 16: (738, 290)
+pixel position of point 15: (735, 322)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (479, 270)
+pixel position of point 1: (481, 301)
+pixel position of point 27: (598, 240)
+pixel position of point 30: (597, 305)
+pixel position of point 16: (718, 270)
+pixel position of point 15: (718, 301)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (480, 278)
+pixel position of point 1: (483, 307)
+pixel position of point 27: (594, 245)
+pixel position of point 30: (594, 311)
+pixel position of point 16: (718, 264)
+pixel position of point 15: (719, 296)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (489, 269)
+pixel position of point 1: (491, 299)
+pixel position of point 27: (602, 237)
+pixel position of point 30: (601, 300)
+pixel position of point 16: (725, 268)
+pixel position of point 15: (724, 299)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (492, 274)
+pixel position of point 1: (494, 305)
+pixel position of point 27: (608, 240)
+pixel position of point 30: (606, 304)
+pixel position of point 16: (728, 273)
+pixel position of point 15: (727, 305)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (488, 255)
+pixel position of point 1: (484, 287)
+pixel position of point 27: (622, 265)
+pixel position of point 30: (616, 343)
+pixel position of point 16: (729, 290)
+pixel position of point 15: (726, 319)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (491, 269)
+pixel position of point 1: (490, 299)
+pixel position of point 27: (607, 256)
+pixel position of point 30: (601, 305)
+pixel position of point 16: (720, 303)
+pixel position of point 15: (716, 330)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (467, 272)
+pixel position of point 1: (467, 306)
+pixel position of point 27: (596, 260)
+pixel position of point 30: (589, 333)
+pixel position of point 16: (719, 289)
+pixel position of point 15: (714, 322)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (457, 279)
+pixel position of point 1: (458, 311)
+pixel position of point 27: (583, 260)
+pixel position of point 30: (579, 332)
+pixel position of point 16: (713, 283)
+pixel position of point 15: (710, 316)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (472, 285)
+pixel position of point 1: (475, 315)
+pixel position of point 27: (585, 255)
+pixel position of point 30: (585, 311)
+pixel position of point 16: (709, 268)
+pixel position of point 15: (708, 299)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (479, 263)
+pixel position of point 1: (479, 294)
+pixel position of point 27: (587, 242)
+pixel position of point 30: (580, 309)
+pixel position of point 16: (727, 261)
+pixel position of point 15: (725, 295)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (473, 294)
+pixel position of point 1: (475, 320)
+pixel position of point 27: (572, 268)
+pixel position of point 30: (568, 304)
+pixel position of point 16: (704, 291)
+pixel position of point 15: (702, 317)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (426, 266)
+pixel position of point 1: (427, 299)
+pixel position of point 27: (537, 245)
+pixel position of point 30: (531, 312)
+pixel position of point 16: (671, 261)
+pixel position of point 15: (668, 298)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (468, 271)
+pixel position of point 1: (469, 301)
+pixel position of point 27: (570, 230)
+pixel position of point 30: (567, 290)
+pixel position of point 16: (703, 263)
+pixel position of point 15: (702, 297)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (467, 264)
+pixel position of point 1: (467, 298)
+pixel position of point 27: (590, 255)
+pixel position of point 30: (582, 319)
+pixel position of point 16: (716, 283)
+pixel position of point 15: (712, 314)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (479, 267)
+pixel position of point 1: (479, 296)
+pixel position of point 27: (588, 234)
+pixel position of point 30: (585, 297)
+pixel position of point 16: (717, 265)
+pixel position of point 15: (715, 297)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (439, 259)
+pixel position of point 1: (441, 290)
+pixel position of point 27: (551, 233)
+pixel position of point 30: (547, 297)
+pixel position of point 16: (680, 253)
+pixel position of point 15: (679, 287)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (414, 261)
+pixel position of point 1: (415, 293)
+pixel position of point 27: (519, 238)
+pixel position of point 30: (513, 306)
+pixel position of point 16: (659, 254)
+pixel position of point 15: (657, 289)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (430, 262)
+pixel position of point 1: (429, 294)
+pixel position of point 27: (530, 239)
+pixel position of point 30: (527, 301)
+pixel position of point 16: (664, 255)
+pixel position of point 15: (664, 289)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (453, 260)
+pixel position of point 1: (453, 291)
+pixel position of point 27: (557, 241)
+pixel position of point 30: (550, 306)
+pixel position of point 16: (698, 257)
+pixel position of point 15: (696, 292)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (463, 262)
+pixel position of point 1: (463, 293)
+pixel position of point 27: (569, 237)
+pixel position of point 30: (563, 295)
+pixel position of point 16: (701, 263)
+pixel position of point 15: (698, 296)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (454, 267)
+pixel position of point 1: (455, 298)
+pixel position of point 27: (559, 241)
+pixel position of point 30: (555, 305)
+pixel position of point 16: (691, 265)
+pixel position of point 15: (690, 298)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (438, 267)
+pixel position of point 1: (439, 298)
+pixel position of point 27: (547, 245)
+pixel position of point 30: (543, 314)
+pixel position of point 16: (685, 255)
+pixel position of point 15: (685, 289)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (446, 260)
+pixel position of point 1: (445, 292)
+pixel position of point 27: (555, 243)
+pixel position of point 30: (550, 311)
+pixel position of point 16: (686, 259)
+pixel position of point 15: (685, 293)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (459, 276)
+pixel position of point 1: (461, 306)
+pixel position of point 27: (570, 272)
+pixel position of point 30: (569, 313)
+pixel position of point 16: (691, 283)
+pixel position of point 15: (690, 311)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (458, 268)
+pixel position of point 1: (459, 299)
+pixel position of point 27: (576, 243)
+pixel position of point 30: (572, 312)
+pixel position of point 16: (703, 265)
+pixel position of point 15: (703, 299)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (470, 296)
+pixel position of point 1: (472, 321)
+pixel position of point 27: (581, 273)
+pixel position of point 30: (580, 312)
+pixel position of point 16: (696, 285)
+pixel position of point 15: (696, 312)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (470, 267)
+pixel position of point 1: (470, 298)
+pixel position of point 27: (590, 242)
+pixel position of point 30: (585, 312)
+pixel position of point 16: (715, 274)
+pixel position of point 15: (712, 306)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (467, 291)
+pixel position of point 1: (471, 319)
+pixel position of point 27: (587, 263)
+pixel position of point 30: (586, 315)
+pixel position of point 16: (709, 273)
+pixel position of point 15: (707, 305)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (469, 275)
+pixel position of point 1: (470, 307)
+pixel position of point 27: (593, 250)
+pixel position of point 30: (591, 323)
+pixel position of point 16: (719, 279)
+pixel position of point 15: (717, 311)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (473, 275)
+pixel position of point 1: (475, 306)
+pixel position of point 27: (592, 250)
+pixel position of point 30: (590, 312)
+pixel position of point 16: (716, 265)
+pixel position of point 15: (715, 297)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (472, 267)
+pixel position of point 1: (473, 299)
+pixel position of point 27: (594, 240)
+pixel position of point 30: (593, 308)
+pixel position of point 16: (718, 269)
+pixel position of point 15: (717, 301)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (488, 270)
+pixel position of point 1: (491, 302)
+pixel position of point 27: (609, 251)
+pixel position of point 30: (603, 324)
+pixel position of point 16: (743, 282)
+pixel position of point 15: (740, 315)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (511, 273)
+pixel position of point 1: (512, 304)
+pixel position of point 27: (634, 251)
+pixel position of point 30: (630, 322)
+pixel position of point 16: (751, 285)
+pixel position of point 15: (747, 315)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (513, 266)
+pixel position of point 1: (514, 297)
+pixel position of point 27: (637, 248)
+pixel position of point 30: (633, 319)
+pixel position of point 16: (754, 280)
+pixel position of point 15: (750, 311)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (505, 285)
+pixel position of point 1: (507, 315)
+pixel position of point 27: (623, 264)
+pixel position of point 30: (620, 321)
+pixel position of point 16: (739, 284)
+pixel position of point 15: (736, 316)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (495, 271)
+pixel position of point 1: (497, 303)
+pixel position of point 27: (615, 241)
+pixel position of point 30: (612, 302)
+pixel position of point 16: (730, 286)
+pixel position of point 15: (728, 316)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (487, 277)
+pixel position of point 1: (490, 308)
+pixel position of point 27: (605, 245)
+pixel position of point 30: (603, 314)
+pixel position of point 16: (728, 273)
+pixel position of point 15: (726, 306)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (500, 281)
+pixel position of point 1: (502, 311)
+pixel position of point 27: (620, 252)
+pixel position of point 30: (618, 311)
+pixel position of point 16: (729, 283)
+pixel position of point 15: (726, 313)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (517, 275)
+pixel position of point 1: (518, 305)
+pixel position of point 27: (632, 244)
+pixel position of point 30: (630, 309)
+pixel position of point 16: (746, 277)
+pixel position of point 15: (744, 308)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (528, 285)
+pixel position of point 1: (529, 314)
+pixel position of point 27: (642, 261)
+pixel position of point 30: (638, 334)
+pixel position of point 16: (765, 287)
+pixel position of point 15: (764, 318)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (521, 279)
+pixel position of point 1: (523, 310)
+pixel position of point 27: (638, 260)
+pixel position of point 30: (634, 332)
+pixel position of point 16: (765, 280)
+pixel position of point 15: (763, 312)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (481, 276)
+pixel position of point 1: (482, 307)
+pixel position of point 27: (590, 254)
+pixel position of point 30: (586, 330)
+pixel position of point 16: (728, 267)
+pixel position of point 15: (725, 301)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (443, 274)
+pixel position of point 1: (443, 306)
+pixel position of point 27: (550, 253)
+pixel position of point 30: (544, 328)
+pixel position of point 16: (692, 264)
+pixel position of point 15: (691, 300)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (423, 276)
+pixel position of point 1: (425, 310)
+pixel position of point 27: (534, 252)
+pixel position of point 30: (530, 324)
+pixel position of point 16: (673, 266)
+pixel position of point 15: (671, 301)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (410, 273)
+pixel position of point 1: (411, 305)
+pixel position of point 27: (519, 254)
+pixel position of point 30: (515, 325)
+pixel position of point 16: (651, 268)
+pixel position of point 15: (651, 302)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (411, 274)
+pixel position of point 1: (412, 305)
+pixel position of point 27: (520, 250)
+pixel position of point 30: (516, 322)
+pixel position of point 16: (654, 263)
+pixel position of point 15: (653, 298)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (436, 278)
+pixel position of point 1: (438, 309)
+pixel position of point 27: (543, 252)
+pixel position of point 30: (541, 323)
+pixel position of point 16: (677, 260)
+pixel position of point 15: (678, 294)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (448, 278)
+pixel position of point 1: (449, 309)
+pixel position of point 27: (553, 256)
+pixel position of point 30: (550, 329)
+pixel position of point 16: (689, 262)
+pixel position of point 15: (688, 296)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (481, 271)
+pixel position of point 1: (482, 302)
+pixel position of point 27: (590, 253)
+pixel position of point 30: (587, 324)
+pixel position of point 16: (723, 265)
+pixel position of point 15: (722, 298)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (498, 269)
+pixel position of point 1: (498, 302)
+pixel position of point 27: (611, 256)
+pixel position of point 30: (604, 329)
+pixel position of point 16: (760, 285)
+pixel position of point 15: (757, 318)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (500, 280)
+pixel position of point 1: (500, 311)
+pixel position of point 27: (610, 258)
+pixel position of point 30: (605, 331)
+pixel position of point 16: (745, 277)
+pixel position of point 15: (744, 309)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (498, 274)
+pixel position of point 1: (499, 306)
+pixel position of point 27: (608, 246)
+pixel position of point 30: (604, 319)
+pixel position of point 16: (744, 274)
+pixel position of point 15: (741, 307)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (489, 265)
+pixel position of point 1: (489, 296)
+pixel position of point 27: (596, 238)
+pixel position of point 30: (591, 307)
+pixel position of point 16: (727, 268)
+pixel position of point 15: (725, 300)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (438, 269)
+pixel position of point 1: (441, 300)
+pixel position of point 27: (545, 246)
+pixel position of point 30: (544, 317)
+pixel position of point 16: (676, 248)
+pixel position of point 15: (676, 283)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (461, 288)
+pixel position of point 1: (464, 317)
+pixel position of point 27: (559, 258)
+pixel position of point 30: (558, 327)
+pixel position of point 16: (697, 267)
+pixel position of point 15: (699, 299)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (476, 281)
+pixel position of point 1: (475, 308)
+pixel position of point 27: (562, 257)
+pixel position of point 30: (555, 326)
+pixel position of point 16: (715, 272)
+pixel position of point 15: (713, 306)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (498, 274)
+pixel position of point 1: (495, 300)
+pixel position of point 27: (575, 259)
+pixel position of point 30: (564, 326)
+pixel position of point 16: (734, 277)
+pixel position of point 15: (731, 311)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (516, 276)
+pixel position of point 1: (511, 303)
+pixel position of point 27: (587, 259)
+pixel position of point 30: (574, 328)
+pixel position of point 16: (757, 274)
+pixel position of point 15: (756, 310)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (517, 283)
+pixel position of point 1: (514, 311)
+pixel position of point 27: (591, 264)
+pixel position of point 30: (579, 329)
+pixel position of point 16: (760, 277)
+pixel position of point 15: (760, 312)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (530, 268)
+pixel position of point 1: (526, 295)
+pixel position of point 27: (598, 261)
+pixel position of point 30: (581, 333)
+pixel position of point 16: (781, 276)
+pixel position of point 15: (778, 314)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (558, 282)
+pixel position of point 1: (553, 315)
+pixel position of point 27: (648, 272)
+pixel position of point 30: (632, 347)
+pixel position of point 16: (817, 300)
+pixel position of point 15: (812, 336)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (565, 289)
+pixel position of point 1: (562, 321)
+pixel position of point 27: (668, 276)
+pixel position of point 30: (657, 355)
+pixel position of point 16: (836, 298)
+pixel position of point 15: (832, 333)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (568, 298)
+pixel position of point 1: (566, 331)
+pixel position of point 27: (675, 292)
+pixel position of point 30: (667, 368)
+pixel position of point 16: (832, 304)
+pixel position of point 15: (830, 339)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (568, 295)
+pixel position of point 1: (566, 329)
+pixel position of point 27: (673, 286)
+pixel position of point 30: (664, 371)
+pixel position of point 16: (827, 296)
+pixel position of point 15: (825, 332)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (559, 295)
+pixel position of point 1: (560, 328)
+pixel position of point 27: (669, 281)
+pixel position of point 30: (660, 363)
+pixel position of point 16: (821, 296)
+pixel position of point 15: (820, 332)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (558, 298)
+pixel position of point 1: (559, 331)
+pixel position of point 27: (665, 284)
+pixel position of point 30: (657, 365)
+pixel position of point 16: (821, 295)
+pixel position of point 15: (818, 332)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (554, 300)
+pixel position of point 1: (552, 333)
+pixel position of point 27: (663, 283)
+pixel position of point 30: (655, 366)
+pixel position of point 16: (834, 301)
+pixel position of point 15: (832, 338)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (568, 296)
+pixel position of point 1: (565, 327)
+pixel position of point 27: (684, 283)
+pixel position of point 30: (674, 365)
+pixel position of point 16: (832, 311)
+pixel position of point 15: (829, 346)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (574, 295)
+pixel position of point 1: (572, 327)
+pixel position of point 27: (691, 281)
+pixel position of point 30: (680, 365)
+pixel position of point 16: (838, 316)
+pixel position of point 15: (832, 349)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (562, 299)
+pixel position of point 1: (562, 331)
+pixel position of point 27: (691, 282)
+pixel position of point 30: (681, 363)
+pixel position of point 16: (830, 322)
+pixel position of point 15: (825, 353)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (560, 289)
+pixel position of point 1: (556, 324)
+pixel position of point 27: (671, 287)
+pixel position of point 30: (657, 370)
+pixel position of point 16: (829, 309)
+pixel position of point 15: (824, 346)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
+Number of faces detected: 1
+number of parts: 68
+pixel position of point 0: (538, 301)
+pixel position of point 1: (535, 334)
+pixel position of point 27: (646, 291)
+pixel position of point 30: (632, 373)
+pixel position of point 16: (815, 316)
+pixel position of point 15: (810, 352)
+Frames per second using video.get(CV_CAP_PROP_FPS) : 0
