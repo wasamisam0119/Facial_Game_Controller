@@ -25,13 +25,26 @@ The controller will be made to interact with DosBox in order to play retro games
 -Download a copy from github
 
     git clone https://github.com/davisking/dlib.git
-    
-    
+   
+
 -Build examples ( macOS / Linux )
 
     cd dlib/examples;   cd dlib/examples;   mkdir build;   cd build;
     cmake ..
     cmake --build . --config Release
+
+##### Compile Dlib Python    
+-Set environment variable:    
+For MacOS,    
+If you install Boost by homebrew:    
+
+    vi ~/.bash_profile
+    export PATH=/usr/local/Cellar/boost:/usr/local/Cellar/boost/1.62.0/lib:$PATH
+    
+    cd dlib
+    python setup.py install
+
+
 
 ##### Run Dlib’s facial landmark detector
 
