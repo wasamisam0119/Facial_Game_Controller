@@ -39,8 +39,7 @@ int main()
 {
     int count=0;
     int flag=0;
-    int x;
-    int y;
+    int left_top_x, left_top_y, right_bottom_x, right_bottom_y, width, height, new_left_top_x, new_left_top_y;
     try
     {
         cv::VideoCapture cap(0);
@@ -56,6 +55,7 @@ int main()
         frontal_face_detector detector = get_frontal_face_detector();
         shape_predictor pose_model;
         deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
+        
         std::vector<rectangle> faces;
         // Grab and process frames until the main window is closed by the user.
         while(!win.is_closed())
@@ -71,32 +71,52 @@ int main()
             // to reallocate the memory which stores the image as that will make cimg
             // contain dangling pointers.  This basically means you shouldn't modify temp
             // while using cimg.
-            cv_image<bgr_pixel> im_display(temp);
             
-
-            if (flag)
-            {
-                cv::Rect myROI(x, y, 10, 10);    
-                croppedImage= temp(myROI);                
-            }
-                                        
-            
-            
+            cv_image<bgr_pixel> im_display(temp);              
+                                                    
                 
-            // Detect faces 
+        
             
             cv_image<bgr_pixel> cimg(temp);
-            // Find the pose of each face.
-            std::vector<full_object_detection> shapes;
-            if (count>10)
+
+            
+            if (count>5)
             {
-                cv_image<bgr_pixel> cimg2(croppedImage);
-                faces = detector(cimg2);/* code */
+                cv::Rect myROI(new_left_top_x,new_left_top_y, width, height);    
+                croppedImage= temp(myROI); 
+                cv_image<bgr_pixel> cimg_small(croppedImage);
+                faces = detector(cimg_small);
+                cimg=cimg_small;
+             
+                cv::rectangle(
+                        temp,
+                        cv::Point(new_left_top_x, new_left_top_y),
+                        cv::Point(new_left_top_x + width , new_left_top_y + height),
+                        cv::Scalar(255,0 ,0)
+                   );
+                       
             }
-            else{
+            if (count <6){
                 faces = detector(cimg);    
-            }
                 
+                cv::rectangle(
+                        temp,
+                        cv::Point(left_top_x-40,left_top_y-40),
+                        cv::Point(right_bottom_x + 40 , right_bottom_y+40),
+                        cv::Scalar(255,255,255)
+                        );
+                if (count == 5)
+                {
+                    new_left_top_x = left_top_x-40;
+                    new_left_top_y = left_top_y-40;
+                    width = right_bottom_x - left_top_x + 80;
+                    height = right_bottom_y - left_top_y + 80;
+ 
+                }
+                count++;
+            }
+            
+            std::vector<full_object_detection> shapes;   
             for (unsigned long i = 0; i < faces.size(); ++i)
             {
                 
@@ -104,27 +124,25 @@ int main()
               
                     //cout << "Number of faces detected: " << shape.size() << endl;
                     // Print the coordinate  there are 68 points on face
-                    /*
-                    cout << "pixel position of point 18: " << shape.part(18) << endl;
-                    cout << "pixel position of point 16: " << shape.part(16) << endl;
-
-                    cout << "pixel position of point 8: " << shape.part(8) << endl;
-                    cout << "pixel position of point 30: " << shape.part(30) << endl;
-                    */
-                    dlib::point p;
-                                        
-                    x=shape.part(18).x();
-                    y=shape.part(18).y();
-                    cv::rectangle(
-                        temp,
-                        cv::Point(x,y),
-                        cv::Point(x+300,y+300),
-                        cv::Scalar(255,255,255)
-                        );
-                    cv::imshow("test",temp);
                     
-                    printf("%d %d\n",x,y);
-                    flag=1;
+                    cout << "pixel position of point 181: " << shape.part(18).x() << endl;
+                    cout << "pixel position of point 182: " << shape.part(18).y() << endl;
+
+                    cout << "pixel position of point 16x: " << shape.part(8).x() << endl;
+                    cout << "pixel position of point 16y: " << shape.part(8).y() << endl;
+                 
+                    //dlib::point p;
+                                        
+                    left_top_x = shape.part(0).x(); 
+                    left_top_y = shape.part(18).y();
+                    right_bottom_x = shape.part(16).x();
+                    right_bottom_y = shape.part(8).y();
+
+                    
+                    //cv::imshow("test",temp);
+                    
+                   
+                    
 
                 shapes.push_back(shape);
             }
@@ -132,7 +150,7 @@ int main()
             win.clear_overlay();
             win.set_image(im_display);
             win.add_overlay(render_face_detections(shapes));
-            count++;
+           
         }
     }
     catch(serialization_error& e)
