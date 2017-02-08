@@ -10,7 +10,7 @@ do
         elif [ "$REPLY" == "a" ] ; then
             xdotool key --window "$(xdotool search --name 'DOSBox')" Left
         elif [ "$REPLY" == "s" ]; then
-            xdotool key --window "$(xdotool search --name 'DOSBox')" Down
+            xdotool key --window "$(xdotool search --name 'DOSBox')" x
         elif [ "$REPLY" == "d" ]; then
             xdotool key --window "$(xdotool search --name 'DOSBox')" Right
         elif [ "$REPLY" == " " ]; then
