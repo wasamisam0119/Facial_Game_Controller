@@ -42,4 +42,8 @@ There is, it turns out, a Linux utility called `xdotool`. This is a tool that le
 `xdotool` has an extensive man page, which will require a lot of reading.
 
 ## 6 - xdotool to the rescue
-xdotool works well for pacman, via a while loop that substitutes `w` for `up`, `s` for `down`, etc.
+xdotool works well for pacman, via a while loop that substitutes `w` for `up`, `s` for`down`, etc.
+
+## 7 - `keyboard.cpp`
+Ed's found in the DOSbox folder a file called `keyboard.cpp`. This file, we believe, emulates a keyboard (hence the name). There's a function called `KEYBOARD_AddKey()` that apparently takes a keyboard key and returns an `int`.
+We believe we can take this and extend it to return the same `int`s as certain keys based on face controller input.
