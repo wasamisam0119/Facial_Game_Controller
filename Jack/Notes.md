@@ -43,3 +43,26 @@ There is, it turns out, a Linux utility called `xdotool`. This is a tool that le
 
 ## 6 - xdotool to the rescue
 xdotool works well for pacman, via a while loop that substitutes `w` for `up`, `s` for `down`, etc.
+The performance seems snappy, but it is only pacman, more intensive games may require optimisation somehow.
+
+## 7 - `keyboard.cpp`
+Ed's found in the DOSbox folder a file called `keyboard.cpp`.
+This file, we believe, emulates a keyboard (hence the name).
+There's a function called `KEYBOARD_AddKey()` that apparently takes a keyboard key and returns an `int`.
+We believe we can take this and extend it to return the same `int`s as certain keys based on face controller input.
+The tricky bit is finding where this function is called and modifying that section of the DOSbox source code to take input from somewhere else.
+
+## 7.5 - `KEYBOARD_AddBuffer(Bit8u data)`
+`KEYBOARD_AddKey` finishes by calling the function `KEYBOARD_AddBuffer`.
+Finding this is huge; it means a couple of things.
+First, hopefully what it means is that we can just add a `.cpp` file which `#include`s the requisite include files, make a while loop that repeatedly calls `KEYBOARD_AddBuffer` with the correct values, and we can make the input of that whatever we want.
+Second, and almost more importantly, it shows that the keyboard in DOSbox isn't just a straight passthrough, it functions as a buffer.
+If the buffer's empty, hooray, it acts like a passthrough.
+If it isn't the key presses are stored and executed in order.
+This means that we don't need to block the keyboard to use another input, or vice-versa.
+The next step is making the `.cpp` file and compiling it...
+
+## 8 - Compiling DOSBox
+DOSBox has some... interesting dependencies when you're trying to compile it.
+Ed's been hard at work trying to use the built-in build files to build version 0.74 of DOSbox from source.
+This is a very important step in our process, as the changes we make to DOSBox are useless if we can't then compile them and run them.
