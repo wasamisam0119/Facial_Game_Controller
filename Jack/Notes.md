@@ -66,3 +66,18 @@ The next step is adding a function into `keyboard.cpp` that generates random-ish
 DOSBox has some... interesting dependencies when you're trying to compile it.
 Ed's been hard at work trying to use the built-in build files to build version 0.74 of DOSbox from source.
 This is a very important step in our process, as the changes we make to DOSBox are useless if we can't then compile them and run them.
+
+## 9 - `/dev/input/js0`
+We're not giving up on DOSbox, however we are exploring alternatives.
+One such alternative is the path `/dev/input/js0`, which, as the name may suggest, is a joystick input.
+I wrote a quick Python script to read its output, which with no joystick connected is of the form:
+```
+[140, 84, 253, 255, 0, 0, 129, 0]
+[140, 84, 253, 255, 0, 0, 129, 1]
+[140, 84, 253, 255, 0, 0, 129, 2]
+[140, 84, 253, 255, 0, 0, 129, 3]
+[140, 84, 253, 255, 0, 0, 129, 4]
+[140, 84, 253, 255, 1, 128, 130, 0]
+[140, 84, 253, 255, 1, 128, 130, 1]
+```
+These lists, each 8 characters long, correspond to something. However, with no access to a joystick, I can't say what yet. More investigation needs doing while Ed finds the dependency files to compile DOSbox
