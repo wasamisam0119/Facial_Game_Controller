@@ -60,7 +60,7 @@ Second, and almost more importantly, it shows that the keyboard in DOSbox isn't 
 If the buffer's empty, hooray, it acts like a passthrough.
 If it isn't the key presses are stored and executed in order.
 This means that we don't need to block the keyboard to use another input, or vice-versa.
-The next step is making the `.cpp` file and compiling it...
+The next step is adding a function into `keyboard.cpp` that generates random-ish keyboard presses, by calling `KEYBOARD_AddBuffer`, and figuring out how to call it from the main file in DOSBox.
 
 ## 8 - Compiling DOSBox
 DOSBox has some... interesting dependencies when you're trying to compile it.
