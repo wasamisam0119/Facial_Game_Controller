@@ -1,0 +1,71 @@
+--Liu Kang--
+
+Fireball:  F-F-HP
+Flying Kick: F-F-HK
+
+Fatality:  F-D-B-U-F-D-B-U... (Hold BLOCK)
+
+--Johnny Cage--
+
+Green Bolt:  B-F-LP
+Shadow Kick:  B-F-LK
+Ball Breaker: BLOCK+LP
+
+Fatality:  F-F-F-HP
+
+--Kano--
+
+Knife Throw:  B-F (Hold BLOCK)
+Body Ball:    F-D-B-U-F-D-B-U (Hold BLOCK)
+
+Fatality:     B-D-F-LP
+
+--Raiden--
+
+Lightning:   D-F-LP
+Body Launch: B-B-F
+Teleport:    D-U
+
+Fatality:    F-F-B-B-B-HP
+
+--Scorpion--
+
+Spear:       B-B-LP
+Teleport Punch: D-B-HP
+
+Fatality: U-U (Hold BLOCK)
+
+--Sub Zero--
+
+Freeze:    D-F-LP
+Slide:     LP+LK+BLOCK
+
+Fatality:  F-D-F-HP
+
+--Sonya Blade--
+
+Ring Toss:     B-B-LP
+Flying Punch:  F-B+HP
+Leg Throw:     LP+LK+BLOCK
+
+Fatality:      F-F-B-B-BLOCK
+
+******************
+ Secrets
+******************
+
+-Fighting against REPTILE is possible by winning with a double
+flawless victory and a fatality in the PIT stage when strange shadows float
+in front of the moon. You may not press the block button! As far as I know
+this is only possible when you are fighting with RAIDEN, KANO, SUB-ZERO,
+JOHNNY CAGE or SCORPION (use a punch or kick button, or hold DOWN instead of 
+Block in his fatality). 
+
+******************
+ Useful Things
+******************
+
+Keys:
+
+ALT-P: pause the game 
+ALT-Q: quit the game 

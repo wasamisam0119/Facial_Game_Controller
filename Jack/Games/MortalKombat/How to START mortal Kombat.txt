@@ -1,0 +1,3 @@
+Press F1 to start a 1 player game
+
+Press F2 to start a 2 Player game
