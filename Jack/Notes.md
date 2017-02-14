@@ -60,9 +60,24 @@ Second, and almost more importantly, it shows that the keyboard in DOSbox isn't 
 If the buffer's empty, hooray, it acts like a passthrough.
 If it isn't the key presses are stored and executed in order.
 This means that we don't need to block the keyboard to use another input, or vice-versa.
-The next step is making the `.cpp` file and compiling it...
+The next step is adding a function into `keyboard.cpp` that generates random-ish keyboard presses, by calling `KEYBOARD_AddBuffer`, and figuring out how to call it from the main file in DOSBox.
 
 ## 8 - Compiling DOSBox
 DOSBox has some... interesting dependencies when you're trying to compile it.
 Ed's been hard at work trying to use the built-in build files to build version 0.74 of DOSbox from source.
 This is a very important step in our process, as the changes we make to DOSBox are useless if we can't then compile them and run them.
+
+## 9 - `/dev/input/js0`
+We're not giving up on DOSbox, however we are exploring alternatives.
+One such alternative is the path `/dev/input/js0`, which, as the name may suggest, is a joystick input.
+I wrote a quick Python script to read its output, which with no joystick connected is of the form:
+```
+[140, 84, 253, 255, 0, 0, 129, 0]
+[140, 84, 253, 255, 0, 0, 129, 1]
+[140, 84, 253, 255, 0, 0, 129, 2]
+[140, 84, 253, 255, 0, 0, 129, 3]
+[140, 84, 253, 255, 0, 0, 129, 4]
+[140, 84, 253, 255, 1, 128, 130, 0]
+[140, 84, 253, 255, 1, 128, 130, 1]
+```
+These lists, each 8 characters long, correspond to something. However, with no access to a joystick, I can't say what yet. More investigation needs doing while Ed finds the dependency files to compile DOSbox

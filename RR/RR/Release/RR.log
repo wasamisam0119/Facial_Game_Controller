@@ -1,0 +1,8 @@
+﻿  main.cpp
+  Generating code
+  3 of 141 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    12 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  RR.vcxproj -> C:\Dev_GRP\RR\Release\RR.exe
+  RR.vcxproj -> C:\Dev_GRP\RR\Release\RR.pdb (Full PDB)
