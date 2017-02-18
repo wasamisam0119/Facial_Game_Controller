@@ -1,3 +1,5 @@
+/*put this file in dlib/examples
+*/
 #ifndef BIGVISION_RENDER_FACE_H_
 #define BIGVISION_RENDER_FACE_H_
 
