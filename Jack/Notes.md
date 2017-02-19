@@ -81,3 +81,9 @@ I wrote a quick Python script to read its output, which with no joystick connect
 [140, 84, 253, 255, 1, 128, 130, 1]
 ```
 These lists, each 8 characters long, correspond to something. However, with no access to a joystick, I can't say what yet. More investigation needs doing while Ed finds the dependency files to compile DOSbox
+
+## 10 - A Return to `xdotool`
+It's been a learning process, trying to emulate keyboard input, and we feel that we gave up on `xdotool` too early, and for the wrong reasons.
+With that in mind, we have returned to it, and with some bash scripting magic, we reckon that it's stable and fast enough as a solution to work in our application.
+So we come back to it, using what we learned from `dev/input/js0`, and with some knowledge of keycodes, we can have it pass through an input it gets from a pipe as a keystroke.
+This means little to no decision logic, which will greatly reduce latency, and result in a more portable bit of code.

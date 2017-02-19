@@ -92,7 +92,7 @@ int main()
 
     try
     {
-        cv::VideoCapture cap(); 
+        cv::VideoCapture cap("../test_video/vid.avi"); //put the test video in file dlib/examples/video/vid.avi
         double video_w=cap.get(CV_CAP_PROP_FRAME_WIDTH);//get the pixel size of the camera 
         double video_h=cap.get(CV_CAP_PROP_FRAME_HEIGHT);//macOS is 1280*720
         cout<<video_w<<" "<<video_h<<endl;
