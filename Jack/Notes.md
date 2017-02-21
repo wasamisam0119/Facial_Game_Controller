@@ -87,3 +87,73 @@ It's been a learning process, trying to emulate keyboard input, and we feel that
 With that in mind, we have returned to it, and with some bash scripting magic, we reckon that it's stable and fast enough as a solution to work in our application.
 So we come back to it, using what we learned from `dev/input/js0`, and with some knowledge of keycodes, we can have it pass through an input it gets from a pipe as a keystroke.
 This means little to no decision logic, which will greatly reduce latency, and result in a more portable bit of code.
+
+## 10.5 Translation Table
+| XDotool         | Actual      |
+|-----------------|-------------|
+|000              |0            |
+|001              |1            |
+|002              |2            |
+|003              |3            |
+|004              |4            |
+|005              |5            |
+|006              |6            |
+|007              |7            |
+|008              |8            |
+|009              |9            |
+|010              |1            |
+|011              |2            |
+|012              |3            |
+|013              |4            |
+|014              |5            |
+|015              |6            |
+|016              |7            |
+|017              |8            |
+|018              |9            |
+|019              |0            |
+|020              |-            |
+|021              |=            |
+|022              |DELETE       |
+|023              |TAB          |
+|024              |q            |
+|025              |w            |
+|026              |e            |
+|027              |r            |
+|028              |t            |
+|029              |y            |
+|030              |u            |
+|031              |i            |
+|032              |o            |
+|033              |p            |
+|034              |[            |
+|035              |]            |
+|036              |RETURN       |
+|037              |CAPSLOCK     |
+|038              |a            |
+|039              |s            |
+|040              |d            |
+|041              |f            |
+|042              |g            |
+|043              |h            |
+|044              |j            |
+|045              |k            |
+|046              |l            |
+|047              |;            |
+|048              |'            |
+|049              |\`           |
+|050              |SHIFT        |
+|051              |\            |
+|052              |z            |
+|053              |x            |
+|054              |c            |
+|055              |v            |
+|056              |b            |
+|057              |n            |
+|058              |m            |
+|059              |,            |
+|060              |.            |
+|061              |/            |
+|062              |SHIFT        |
+|063              |\*           |
+|064              |             |
+|065              |' '          |
