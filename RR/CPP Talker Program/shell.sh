@@ -1,6 +1,8 @@
 #!/bin/bash
 
+[ ! -e "testpipe" ] && ( mkfifo testpipe )
 input="testpipe"
+
 echo "Im in"
 while [ "$REPLY" != "000" ]
 do
@@ -10,3 +12,4 @@ read -n 3
 	fi
 done < "$input"
 echo "Fin"
+rm "testpipe"

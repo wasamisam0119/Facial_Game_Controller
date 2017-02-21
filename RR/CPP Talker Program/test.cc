@@ -12,79 +12,56 @@
 using namespace std;
 std::mutex mtx;
 
+int in;
+int hold = 0;
+
 void shell(){
 	int sent = 0;
-	int in;
-	//int i = 0;
 	
 	system("./shell.sh&");
-	//for(int i = 0; i < 9; i++){
 	while(1){
-		in = getchar();
-		if(in == 'a'){
-			mtx.try_lock();
-			system("echo 001 > testpipe");
-			sent++;
-			mtx.unlock();
+		mtx.try_lock();
+		if(in == 'q') break;
+		if(hold != 0) hold--;
+		switch(in){
+		case 'a': system("echo 001 > testpipe");
+					sent++;
+					break;
+		case 'b': system("echo 002 > testpipe");
+					sent++;
+					break;
+		case 'c': system("echo 003 > testpipe");
+					sent++;
+					break;
+		default: break;
 		}
-		else if(in == 'b'){
-			mtx.try_lock();
-			system("echo 002 > testpipe");
-			sent++;
-			mtx.unlock();
-		}
-		else if(in == 'c'){
-			mtx.try_lock();
-			system("echo 003 > testpipe");
-			sent++;
-			mtx.unlock();
-		}
-		else{
-			//i--;
-		}
-	//i++;
-	
+		mtx.unlock();
 	}
 	system("echo 000 > testpipe");
-	sent++;
+			sent++;
 	printf("Sent: %d\n", sent);
 }
 
-void cqueue(){
-	
-	queue<int> q;
-	q.push(100);
-	q.push(200);
-	q.push(300);
-	q.push(400);
-
-	cout << "Size of the queue: " << q.size()
-<< endl;
-
-	cout << q.front() << endl;
-	q.pop();
-
-	cout << q.front() << endl;
-	q.pop();
-	
-	cout << q.front() << endl;
-	q.pop();
-
-	cout << q.front() << endl;
-	q.pop();
-
-	if(q.empty()){
-		cout << "Queue is empty" << endl;
+void detector(){
+	while(1){
+		if(!hold){
+			mtx.try_lock();
+			in = getchar();
+			hold++;
+		}
+		mtx.unlock();
+		if(in == 'q') break;
 	}
-	
+	printf("End of detector\n");
 }
 
 int main(){	
-	
 	std::thread first (shell);
-	std::thread second (cqueue);
+	std::thread second (detector);
 	
 	first.join();
+	printf("First join\n");
 	second.join();
+	printf("Second Join\n");
 	return 0;
 }
