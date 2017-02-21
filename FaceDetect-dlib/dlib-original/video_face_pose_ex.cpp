@@ -34,7 +34,8 @@
 #include <vector>
 #include "render_face.hpp"
 #include <string>
-#include <sstream>
+#include <fstream>
+#include <sys/time.h>
 
 using namespace dlib;
 using namespace std;
@@ -42,16 +43,24 @@ using namespace std;
 
 /*this function is used to check if the bounding box(coordinates) excess the video_size, 
 which means it is a assertion, if it excessed, set the corrdinates to a proper value*/
+long double getDifferenceInSecond(struct timeval start, struct timeval end)
+{
+	int iSeconds = end.tv_sec - start.tv_sec;
+	int iUSeconds = end.tv_usec - start.tv_usec;
+ 	long double mtime = (iSeconds * 1000 + iUSeconds / 1000.0)/1000.000;
+	return mtime;
+}
+
 int vaildSpace(int *x,int *y,double *w,double *h,int video_w,int video_h)
 {
     int boolean=1;
-    if (*x-5<0)
+    if (*x-10<0)
     {
         *x=1;
         *w=0.8*video_w;
         
     }
-    if (*y-5<0)
+    if (*y-10<0)
     {
         *y=1;
         *h=0.8*video_h;
@@ -77,33 +86,34 @@ int vaildSpace(int *x,int *y,double *w,double *h,int video_w,int video_h)
 
 int main()
 {
-    int left_top_x, left_top_y, right_bottom_x, right_bottom_y, x,y,offset_x,offset_y,point_zero_x,point_zero_y;
-    int initial_y_zero; //initial point of the zero landmark
+    int left_top_x, left_top_y, right_bottom_x, right_bottom_y, x,y,offset_x,offset_y;
     int initial_x;
     int initial_y;
-    int *x1=&left_top_x;
-    int *y1=&left_top_y;
+    int *x1=&initial_x;
+    int *y1=&initial_y;
     double width, height;
     double *w=&width;
     double *h=&height;
     string number;
-    int centre_point_y;
-    int centre_point_x;
+    fstream file;
+    double fps;
+
     try
-    {	for(int c=1;c<529;c++)
-	{	
+    {	for(int c=1;c<112;c++)
+	{
+	cout<<"c is "<<c<<endl;
+	long double iDifference = 1.000;
+	struct timeval startTime, currentTime;
+	number=to_string(c);	
     	int second_time=0;
     	int init=1;     
     	int count=0;//count the frame
     	int face_detected=0;//check if the detector detecte the face
-	number=to_string(c);
-        cv::VideoCapture cap("../video/00"+number+"/vid.avi");
+        cv::VideoCapture cap("../video/"+number+"/vid.avi");
     	int frameCnt = cap.get(CV_CAP_PROP_FRAME_COUNT);
 	cout<<"frame count is "<<frameCnt<<endl;
         double video_w = cap.get(CV_CAP_PROP_FRAME_WIDTH);//get the pixel size of the camera 
-
         double video_h = cap.get(CV_CAP_PROP_FRAME_HEIGHT);//macOS is 1280*720
-        double fps = 30.0; // Just a place holder. Actual value calculated after 100 frames.
         cout<<video_w<<" "<<video_h<<endl;
         if (!cap.isOpened())
         {
@@ -121,7 +131,6 @@ int main()
         deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
         std::vector<rectangle> faces;
         // Grab and process frames until the main window is closed by the user.
-    	double t = (double)cv::getTickCount();
         while(!win.is_closed())
         {
             cv::Mat croppedImage;
@@ -133,7 +142,6 @@ int main()
             // Find the pose of each face.
             std::vector<full_object_detection> shapes;
             full_object_detection shape;
-
             /*
             if it is second time and the coordinates is in the picture size, 
             crop the image and the detector will only detecte the face within the cropped image
@@ -146,17 +154,13 @@ int main()
                 cv_image<bgr_pixel>cimg_crop(croppedImage);
                 cimg= cimg_crop;
             }
-
             /*otherwise scan the whole image*/                                                    
-
             else{
                 cv_image<bgr_pixel>cimg_ori(temp);
                 cimg=cimg_ori;
                 init=1;
                 second_time=0;
             }
-                                                        
-                                                        
             faces = detector(cimg);
             if (faces.size()>0)
                 {            
@@ -166,17 +170,12 @@ int main()
                         shape = pose_model(cimg, faces[i]);                                                         
                         right_bottom_x = shape.part(16).x();    
                         right_bottom_y = shape.part(8).y();
-			centre_point_x=shape.part(30).x(); //this is used to calculate the offset for the next frame
-			centre_point_y=shape.part(30).y();
-
-
                         if(init)
                         {
                             left_top_x = 0.6*shape.part(0).x(); //this point is used to draw the bounding box,0.6 is make the box bigger
                             left_top_y = 0.65*shape.part(18).y();//same as previous
                             initial_x=left_top_x;   //get the initial x which is used to calculate offset
                             initial_y=left_top_y;       
-                            initial_y_zero=shape.part(0).y();//same as previous
                             printf("init x is %d\n",initial_x );
                             init=0;
                             #ifdef OPENCV_FACE_RENDER
@@ -189,19 +188,14 @@ int main()
 				{
 				    offset_x=initial_x;
 				    offset_y=initial_y;
-				    cout<<"offset_x is "<<offset_x<<endl;
-
                             	//offset_x=initial_x-centre_point_x;    //calculate offset
 	                        //offset_y=initial_y-centre_point_y;                                                    
 				}
-                            left_top_x=shape.part(0).x();
-			    cout<<"left top x is "<<left_top_x<<endl;
-			    left_top_y=shape.part(18).y();
-			    left_top_x=left_top_x+offset_x;
-                            left_top_y=left_top_y+offset_y;
+                            left_top_x=shape.part(0).x()+offset_x;
+			    left_top_y=shape.part(18).y()+offset_y;
                             right_bottom_x+=offset_x;
                             right_bottom_y+=offset_y;
-                            //cout<<left_top_x<<" added "<<left_top_y<<endl;  //print the left top point of the bounding box 
+			    //cout<<right_bottom_x<<"right_bottom_x and y"<<right_bottom_y<<endl;
                             #ifdef OPENCV_FACE_RENDER   
                                 render_face(temp, shape,offset_x,offset_y);
                             #endif
@@ -215,20 +209,20 @@ int main()
                             }
                             second_time++;
                         }                        
-//			cv::putText(temp, cv::format("fps %.2f",fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
                         width = 1.4*(right_bottom_x - left_top_x);
                         height = 1.2*(right_bottom_y - left_top_y);                          
                         shapes.push_back(shape);
                         //cout<<width<<"width and height "<<height<<endl;
                         //printf("%d %d\n",left_top_x,left_top_y);
                         //printf("%d %d\n",x,y );                                        
-                        cv::rectangle(
+			if (vaildSpace(x1,y1,w,h,video_w,video_h)){
+                        	cv::rectangle(
                                 temp,
                                 cv::Point(left_top_x,left_top_y),
                                 cv::Point(left_top_x+width,left_top_y+height),
                                 cv::Scalar(255,255,255)
                                 );                                    
-                
+			}
                     }
                 }
                 else
@@ -236,6 +230,19 @@ int main()
                     face_detected=0;
                 }
             count++;
+	    if(count%20==0)
+	    {
+		gettimeofday(&currentTime,NULL); 
+		if (count!=20)
+		{
+		    iDifference=getDifferenceInSecond(startTime,currentTime);
+		}
+		    printf("%Lf\n",iDifference);
+	    	fps = 20/iDifference;
+		gettimeofday(&startTime,NULL);
+		
+	    }
+	    cv::putText(temp, cv::format("fps %.3f",fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
 	/*    if ( count == 100)
             {
 		printf("%lf",cv::getTickFrequency());
@@ -251,8 +258,7 @@ int main()
 	    {
 		break;
 	    }
-            //win.add_overlay(render_face_detections(shapes));
-        }
+            }
     }
     }
     catch(serialization_error& e)
@@ -266,7 +272,6 @@ int main()
     {
         cout << e.what() << endl;
     }
-
 
 }
 
