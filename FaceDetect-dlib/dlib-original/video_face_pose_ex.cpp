@@ -40,9 +40,7 @@
 using namespace dlib;
 using namespace std;
 #define OPENCV_FACE_RENDER
-
-/*this function is used to check if the bounding box(coordinates) excess the video_size, 
-which means it is a assertion, if it excessed, set the corrdinates to a proper value*/
+/*actually it is time difference in million second, but the unit is seconds, so that's the name comes from*/
 long double getDifferenceInSecond(struct timeval start, struct timeval end)
 {
 	int iSeconds = end.tv_sec - start.tv_sec;
@@ -50,7 +48,24 @@ long double getDifferenceInSecond(struct timeval start, struct timeval end)
  	long double mtime = (iSeconds * 1000 + iUSeconds / 1000.0)/1000.000;
 	return mtime;
 }
+/*fps calculator*/
+inline double FPScal(int count,double fps,long double iDifference,struct timeval *currentTime,struct timeval *startTime)
+{
+		gettimeofday(currentTime,NULL); 
+		if (count!=20)
+		{
+		    iDifference=getDifferenceInSecond(*startTime,*currentTime);
+		}
+		    printf("%Lf\n",iDifference);
+	    	fps = 20/iDifference;
+		gettimeofday(startTime,NULL);
+		
+	 return fps;
 
+}
+
+/*this function is used to check if the bounding box(coordinates) excess the video_size, 
+which means it is a assertion, if it excessed, set the corrdinates to a proper value*/
 int vaildSpace(int *x,int *y,double *w,double *h,int video_w,int video_h)
 {
     int boolean=1;
@@ -99,9 +114,9 @@ int main()
     double fps;
 
     try
-    {	for(int c=1;c<112;c++)
+    {	for(int c=2;c<112;c++)
 	{
-	cout<<"c is "<<c<<endl;
+	cout<<"video number is "<<c<<endl;
 	long double iDifference = 1.000;
 	struct timeval startTime, currentTime;
 	number=to_string(c);	
@@ -230,18 +245,11 @@ int main()
                     face_detected=0;
                 }
             count++;
-	    if(count%20==0)
+	 if(count%20==0)
 	    {
-		gettimeofday(&currentTime,NULL); 
-		if (count!=20)
-		{
-		    iDifference=getDifferenceInSecond(startTime,currentTime);
-		}
-		    printf("%Lf\n",iDifference);
-	    	fps = 20/iDifference;
-		gettimeofday(&startTime,NULL);
-		
+	    	fps=FPScal(count,fps,iDifference,&currentTime,&startTime);
 	    }
+            // Display it all on the screen
 	    cv::putText(temp, cv::format("fps %.3f",fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
 	/*    if ( count == 100)
             {
@@ -251,7 +259,6 @@ int main()
                 count = 0;
             }
 	    */
-            // Display it all on the screen
             win.clear_overlay();
             win.set_image(im_display);                      
 	    if (count==frameCnt-1)
