@@ -34,8 +34,10 @@
 #include <vector>
 #include "render_face.hpp"
 #include <string>
-#include <fstream>
 #include <sys/time.h>
+#include <fstream>
+#include <sys/types.h>  
+#include <sys/stat.h>  
 
 using namespace dlib;
 using namespace std;
@@ -56,14 +58,21 @@ inline double FPScal(int count,double fps,long double iDifference,struct timeval
 		{
 		    iDifference=getDifferenceInSecond(*startTime,*currentTime);
 		}
-		    printf("%Lf\n",iDifference);
+		   // printf("%Lf\n",iDifference);
 	    	fps = 20/iDifference;
 		gettimeofday(startTime,NULL);
 		
 	 return fps;
 
 }
-
+inline void mknewDir(const char* name)
+{
+	int i = mkdir(name,0777);	
+	if (i ==-1) 
+	{
+			cout<<"can not make new dict!"<<endl;
+	}
+}
 /*this function is used to check if the bounding box(coordinates) excess the video_size, 
 which means it is a assertion, if it excessed, set the corrdinates to a proper value*/
 int vaildSpace(int *x,int *y,double *w,double *h,int video_w,int video_h)
@@ -95,8 +104,24 @@ int vaildSpace(int *x,int *y,double *w,double *h,int video_w,int video_h)
             
         }
     return boolean;    
-    
+}
 
+void writePoints(ofstream &out,full_object_detection &shape,int t)
+{
+		if (out.is_open())   
+    {  
+         out << "version: "+to_string(t)+"\n";  
+         out << "n_points: 68\n";  
+         out << "{\n";  
+		 for(int i = 0;i<67;i++)
+		 {
+				 out<<to_string((double)shape.part(i).x());
+				 out<<" ";
+				 out<<to_string((double)shape.part(i).y())+"\n";
+		 }
+		 out << "}\n";
+         out.close();  
+     }
 }
 
 int main()
@@ -109,24 +134,28 @@ int main()
     double width, height;
     double *w=&width;
     double *h=&height;
-    string number;
-    fstream file;
     double fps;
-
+    string number;
     try
-    {	for(int c=2;c<112;c++)
+    {	
+		for(int c=1;c<10;c++)
 	{
-	cout<<"video number is "<<c<<endl;
+	
+		number=to_string(c);	
+		string dictname = "/Users/Sam_Du/dlib/examples/testfile/"+number;
+		mknewDir(dictname.c_str());
+//	cout<<"video number is "<<c<<endl;
 	long double iDifference = 1.000;
 	struct timeval startTime, currentTime;
-	number=to_string(c);	
     	int second_time=0;
     	int init=1;     
     	int count=0;//count the frame
     	int face_detected=0;//check if the detector detecte the face
         cv::VideoCapture cap("../video/"+number+"/vid.avi");
+        //"../video/"+number+"/vid.avi"
+
     	int frameCnt = cap.get(CV_CAP_PROP_FRAME_COUNT);
-	cout<<"frame count is "<<frameCnt<<endl;
+//	cout<<"frame count is "<<frameCnt<<endl;
         double video_w = cap.get(CV_CAP_PROP_FRAME_WIDTH);//get the pixel size of the camera 
         double video_h = cap.get(CV_CAP_PROP_FRAME_HEIGHT);//macOS is 1280*720
         cout<<video_w<<" "<<video_h<<endl;
@@ -148,6 +177,9 @@ int main()
         // Grab and process frames until the main window is closed by the user.
         while(!win.is_closed())
         {
+			int name = count+1;
+			ofstream out("../testfile/"+number+"/00000"+to_string(name)+".pts");
+			auto &refout= out;
             cv::Mat croppedImage;
             // Grab a frame
             cv::Mat temp;
@@ -157,6 +189,7 @@ int main()
             // Find the pose of each face.
             std::vector<full_object_detection> shapes;
             full_object_detection shape;
+			auto & refshape =shape;
             /*
             if it is second time and the coordinates is in the picture size, 
             crop the image and the detector will only detecte the face within the cropped image
@@ -191,7 +224,7 @@ int main()
                             left_top_y = 0.65*shape.part(18).y();//same as previous
                             initial_x=left_top_x;   //get the initial x which is used to calculate offset
                             initial_y=left_top_y;       
-                            printf("init x is %d\n",initial_x );
+             //               printf("init x is %d\n",initial_x );
                             init=0;
                             #ifdef OPENCV_FACE_RENDER
                                 render_face(temp, shape,0,0);   //draw the face landmark
@@ -227,6 +260,7 @@ int main()
                         width = 1.4*(right_bottom_x - left_top_x);
                         height = 1.2*(right_bottom_y - left_top_y);                          
                         shapes.push_back(shape);
+						writePoints(refout,refshape,c);
                         //cout<<width<<"width and height "<<height<<endl;
                         //printf("%d %d\n",left_top_x,left_top_y);
                         //printf("%d %d\n",x,y );                                        
