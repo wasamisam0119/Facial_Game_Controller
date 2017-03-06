@@ -84,8 +84,8 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 
 - You can download different MSDOS games from http://www.myabandonware.com/. Once downloaded, just move the games into your mounted folder
 
-[1]:	https://sourceforge.net/projects/boost/files/boost/1.62.0/
-[2]:	http://dlib.net/
+  [1]:https://sourceforge.net/projects/boost/files/boost/1.62.0/
+  [2]:http://dlib.net/
 
 ### 3. xdotool
 * Our controller will work by obtaining output from the controller and then use xdotools to simulate the keyboard commands onto the DosBox emulator
@@ -101,3 +101,9 @@ Now we can run a speed-up real time face landmark, get the coordinates of 68 poi
 > OpenSUSE can use zypper install xdotool
 
 * In order for xdotool to run, you need to run chmod +x xdostuff.sh first. This allows it to execute.
+
+### 4. Facial Recgnization Speedup Testing Result
+
+Original Speed(fps) using dlib is usually between 5~8, now it is increse to more than 20 when playing video.
+
+![example1](https://i.imgsafe.org/ca65170b46.png) 
