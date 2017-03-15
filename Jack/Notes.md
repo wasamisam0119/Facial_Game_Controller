@@ -157,3 +157,10 @@ This means little to no decision logic, which will greatly reduce latency, and r
 |063              |\*           |
 |064              |             |
 |065              |' '          |
+
+# 11 - Python?
+`xdotool`, while useful, is limited. It limits us to doing things specifically within DOSbox, is not multi-platform, and, being shell script, is slow.
+So further research is required. There is a GitHub project called `PyUserInput` that seems to do exactly what we want, which is emulate a keyboard on Windows, Mac, or Linux.
+After a brief period of testing functionality, it's totally program-agnostic; it works with DOSbox, with a web browser, for typing in notes (at least on Mac). Python's built-in
+file handling capability means that we can continue to use a `FIFO` pipe as we were with `xdotool`, but now we have a much more generalised solution.
+The next step is getting the face detector running on my own system so we can test speed and latency.
