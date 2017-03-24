@@ -164,3 +164,11 @@ So further research is required. There is a GitHub project called `PyUserInput` 
 After a brief period of testing functionality, it's totally program-agnostic; it works with DOSbox, with a web browser, for typing in notes (at least on Mac). Python's built-in
 file handling capability means that we can continue to use a `FIFO` pipe as we were with `xdotool`, but now we have a much more generalised solution.
 The next step is getting the face detector running on my own system so we can test speed and latency.
+
+# 12 - `dlib` errors and installs
+The python thing seems to work very well and very quickly; now it's a matter of linking up what Sam and Yehan have done with mine and Ed's work.
+On the face of it, this isn't difficult, but haven't we said that before...
+They're using a suite of tools called `dlib`, and installing that has been a monumental ballache.
+After a few days of going through, obtaining and linking up the many dependencies, I installed it on my laptop.
+As it turns out though, the face detection program that ran so smoothly on Sam's laptop doesn't do so on mine.
+More work needed, I think...
