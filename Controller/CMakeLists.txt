@@ -48,10 +48,3 @@ else()
       message("OpenCV not found, so we won't build the webcam_face_pose_ex example.")
    endif()
 endif()
-
-
-if (DLIB_LINK_WITH_SQLITE3)
-   add_example(sqlite_ex)
-endif()
-
-

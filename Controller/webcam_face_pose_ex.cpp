@@ -50,19 +50,6 @@ long double getDifferenceInSecond(struct timeval start, struct timeval end)
 	long double mtime = (iSeconds * 1000 + iUSeconds / 1000.0) / 1000.000;
 	return mtime;
 }
-/*fps calculator*/
-inline double FPScal(int count, double fps, long double iDifference, struct timeval *currentTime, struct timeval *startTime)
-{
-	if (count != 20)
-	{
-		iDifference = getDifferenceInSecond(*startTime, *currentTime);
-	}
-	printf("%Lf\n", iDifference);
-	fps = 20 / iDifference;
-
-	return fps;
-
-}
 
 /*this function is used to check if the bounding box(coordinates) excess the video_size,
 which means it is a assertion, if it excessed, set the corrdinates to a proper value*/
@@ -139,37 +126,53 @@ cv::Mat get_camera_matrix(float focal_length, cv::Point2d center)
 void quadrant(std::vector<cv::Point2d> image_points, std::vector<cv::Point2d> nose_end_point2D) {
 	float vector_x = nose_end_point2D[0].x - image_points[0].x;
 	float vector_y = nose_end_point2D[0].y - image_points[0].y;
+	int dir = 0;
+
 	if (vector_y / vector_x<0.57 && vector_y / vector_x>-0.57) {
 		if (vector_x>0)
 		{
 			//cout << "left" << endl;
-			release();
-			aRight();
+			if (dir != 1) {
+				dir = 1;
+				release();
+				aRight();
+			}
 		}
 		if (vector_x<0)
 		{
 			//cout << "right" << endl;
-			release();
-			aLeft();
+			if (dir != 2) {
+				dir = 2;
+				release();
+				aLeft();
+			}
 		}
 	}
 	else {
 		if (vector_y>0)
 		{
 			//cout << "down" << endl;
+			if (dir != 3) {
+				dir = 3;
+				release();
+			}
 			
 		}
 		if (vector_y<0)
 		{
 			//cout << "up" << endl;
-			release();
-			space();
+			if (dir != 4) {
+				dir = 4;
+				release();
+				space();
+			}
 		}
 	}
 }
 int main()
 {
-	int left_top_x, left_top_y, right_bottom_x, right_bottom_y, x, y, offset_x, offset_y;
+	int left_top_x, left_top_y, right_bottom_x, right_bottom_y, offset_x, offset_y;
+	//int x, y;
 	int initial_x;
 	int initial_y;
 	int *x1 = &initial_x;
@@ -179,8 +182,8 @@ int main()
 	double *h = &height;
 	string number;
 	fstream file;
-	double fps;
-	setup();
+	//double fps;
+	setup(); //Sets the input struct up for sending keys to the window in focus
 
 	try
 	{
@@ -188,7 +191,7 @@ int main()
 		{
 			cout << "video number is " << c << endl;
 			long double iDifference = 1.000;
-			struct timeval startTime, currentTime;
+			//struct timeval startTime, currentTime;
 			number = to_string(c);
 			int second_time = 0;
 			int init = 1;
@@ -289,7 +292,7 @@ int main()
 							nose_end_point3D.push_back(cv::Point3d(0, 0, 1000.0));
 
 							cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
-							cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
+							//cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
 
 							//cout << "Rotation Vector " << endl << rotation_vector << endl;
 							//cout << "Translation Vector" << endl << translation_vector << endl;
@@ -325,7 +328,7 @@ int main()
 
 							//nose_end_point2D[0].x +=  offset_x;
 							//nose_end_point2D[0].y +=  offset_y;
-							cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
+							//cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
 
 							//cout << "Rotation Vector " << endl << rotation_vector << endl;
 							//cout << "Translation Vector" << endl << translation_vector << endl;
@@ -371,20 +374,8 @@ int main()
 					face_detected = 0;
 				}
 				count++;
-				if (count % 20 == 0)
-				{
-					fps = FPScal(count, fps, iDifference, &currentTime, &startTime);
-				}
 				// Display it all on the screen
-				cv::putText(temp, cv::format("fps %.3f", fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
-				/*    if ( count == 100)
-				{
-				printf("%lf",cv::getTickFrequency());
-				t = ((double)cv::getTickCount() - t)/cv::getTickFrequency();
-				fps = 100.0/t;
-				count = 0;
-				}
-				*/
+				//cv::putText(temp, cv::format("fps %.3f", fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
 				win.clear_overlay();
 				win.set_image(im_display);
 				if (count == frameCnt - 1)
