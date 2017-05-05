@@ -136,33 +136,52 @@ cv::Mat get_camera_matrix(float focal_length, cv::Point2d center)
 		return camera_matrix;
 }
 
+void getEulerAngles(cv::Mat &rotCamerMatrix,cv::Vec3d &eulerAngles){
+
+    cv::Mat cameraMatrix,rotMatrix,transVect,rotMatrixX,rotMatrixY,rotMatrixZ;
+    double* _r = rotCamerMatrix.ptr<double>();
+    double projMatrix[12] = {_r[0],_r[1],_r[2],0,
+                          _r[3],_r[4],_r[5],0,
+                          _r[6],_r[7],_r[8],0};
+
+    decomposeProjectionMatrix( cv::Mat(3,4,CV_64FC1,projMatrix),
+                               cameraMatrix,
+                               rotMatrix,
+                               transVect,
+                               rotMatrixX,
+                               rotMatrixY,
+                               rotMatrixZ,
+                               eulerAngles);
+}
+
 //identify the direction of vector
-void quadrant (std::vector<cv::Point2d> image_points, std::vector<cv::Point2d> nose_end_point2D )
+void quadrant (cv::Vec3d eulerAngles)
 {
-		float vector_x = nose_end_point2D[0].x - image_points[0].x;
-		float vector_y = nose_end_point2D[0].y - image_points[0].y;
-		if (vector_y / vector_x < 0.57 && vector_y / vector_x > -0.57)
-		{
-				if (vector_x > 0)
-				{
-						cout << "left" << endl;
-				}
-				if (vector_x < 0)
-				{
-						cout << "right" << endl;
-				}
-		}
-		else
-		{
-				if (vector_y > 0)
-				{
-						cout << "down" << endl;
-				}
-				if (vector_y > 0)
-				{
-						cout << "up" << endl;
-				}
-		}
+    float yaw = eulerAngles[1];
+    float pitch = eulerAngles[0];
+   
+        if (yaw < -30)
+        {
+            cout << "left" << endl;     //mirror reflection
+        }
+        if (yaw > 30)
+        {
+            cout << "right" << endl;
+        }
+    
+        if (pitch<0 && pitch>-170)
+        {
+            cout << "down" << endl;
+        }
+        if (pitch<165 && pitch>0)
+        {
+            cout << "up" << endl;
+        }
+        else
+        {
+        	cout << "still" << endl;
+        }
+    
 }
 int main()
 {
@@ -231,6 +250,7 @@ int main()
 								std::vector<cv::Point2d> image_points;
 								cv::Mat rotation_vector;
 								cv::Mat rotation_matrix;
+								cv::Vec3d eulerAngles;
 								cv::Mat translation_vector;
 								std::vector<cv::Point3d> nose_end_point3D;
 								std::vector<cv::Point2d> nose_end_point2D;
@@ -342,21 +362,12 @@ int main()
 
 												cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
 												cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
-												//draw the area of still state
-												cv::rectangle(
-																temp,
-																cv::Point(left_top_x/0.6, left_top_y/0.65),
-																cv::Point(right_bottom_x,right_bottom_y/1.2), //zoom out the up down pose
-																cv::Scalar(0, 0, 255)
-															 );
 
-												cv::Rect still_state(cv::Point(left_top_x/0.6, left_top_y/0.65),
-																cv::Point(right_bottom_x,right_bottom_y/1.2));
+												Rodrigues(rotation_vector,rotation_matrix);
+                            					getEulerAngles(rotation_matrix,eulerAngles);
 
-												//if out of still state, identify the direction
-												if(!still_state.contains(nose_end_point2D[0])){
-														quadrant (image_points, nose_end_point2D );
-												}
+												quadrant (eulerAngles);
+												
 
 
 										}
