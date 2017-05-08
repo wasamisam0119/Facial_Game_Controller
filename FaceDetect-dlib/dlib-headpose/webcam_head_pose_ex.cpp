@@ -19,9 +19,9 @@
     This will set the appropriate compiler options for GCC, clang, Visual
     Studio, or the Intel compiler.  If you are using another compiler then you
     need to consult your compiler's manual to determine how to enable these
-    instructions.  Note that AVX is the fastest but requires a CPU from at least
-    2011.  SSE4 is the next fastest and is supported by most current machines.
-*/
+	instructions.  Note that AVX is the fastest but requires a CPU from at least
+	2011.  SSE4 is the next fastest and is supported by most current machines.
+	*/
 
 //This version only print the coordinates of points
 #include <math.h>
@@ -53,12 +53,12 @@ long double getDifferenceInSecond(struct timeval start, struct timeval end)
 inline double FPScal(int count, double fps, long double iDifference, struct timeval *currentTime, struct timeval *startTime)
 {
 		gettimeofday(currentTime, NULL);
-		if (count != 20)
+		if (count != 50)
 		{
 				iDifference = getDifferenceInSecond(*startTime, *currentTime);
 		}
 		printf("%Lf\n", iDifference);
-		fps = 20 / iDifference;
+		fps = 50 / iDifference;
 		gettimeofday(startTime, NULL);
 
 		return fps;
@@ -138,50 +138,50 @@ cv::Mat get_camera_matrix(float focal_length, cv::Point2d center)
 
 void getEulerAngles(cv::Mat &rotCamerMatrix,cv::Vec3d &eulerAngles){
 
-    cv::Mat cameraMatrix,rotMatrix,transVect,rotMatrixX,rotMatrixY,rotMatrixZ;
-    double* _r = rotCamerMatrix.ptr<double>();
-    double projMatrix[12] = {_r[0],_r[1],_r[2],0,
-                          _r[3],_r[4],_r[5],0,
-                          _r[6],_r[7],_r[8],0};
+		cv::Mat cameraMatrix,rotMatrix,transVect,rotMatrixX,rotMatrixY,rotMatrixZ;
+		double* _r = rotCamerMatrix.ptr<double>();
+		double projMatrix[12] = {_r[0],_r[1],_r[2],0,
+				_r[3],_r[4],_r[5],0,
+				_r[6],_r[7],_r[8],0};
 
-    decomposeProjectionMatrix( cv::Mat(3,4,CV_64FC1,projMatrix),
-                               cameraMatrix,
-                               rotMatrix,
-                               transVect,
-                               rotMatrixX,
-                               rotMatrixY,
-                               rotMatrixZ,
-                               eulerAngles);
+		decomposeProjectionMatrix( cv::Mat(3,4,CV_64FC1,projMatrix),
+						cameraMatrix,
+						rotMatrix,
+						transVect,
+						rotMatrixX,
+						rotMatrixY,
+						rotMatrixZ,
+						eulerAngles);
 }
 
 //identify the direction of vector
 void quadrant (cv::Vec3d eulerAngles)
 {
-    float yaw = eulerAngles[1];
-    float pitch = eulerAngles[0];
-   
-        if (yaw < -30)
-        {
-            cout << "left" << endl;     //mirror reflection
-        }
-        if (yaw > 30)
-        {
-            cout << "right" << endl;
-        }
-    
-        if (pitch<0 && pitch>-170)
-        {
-            cout << "down" << endl;
-        }
-        if (pitch<165 && pitch>0)
-        {
-            cout << "up" << endl;
-        }
-        else
-        {
-        	cout << "still" << endl;
-        }
-    
+		float yaw = eulerAngles[1];
+		float pitch = eulerAngles[0];
+
+		if (yaw < -30)
+		{
+				cout << "left" << endl;     //mirror reflection
+		}
+		if (yaw > 30)
+		{
+				cout << "right" << endl;
+		}
+
+		if (pitch<0 && pitch>-170)
+		{
+				cout << "down" << endl;
+		}
+		if (pitch<165 && pitch>0)
+		{
+				cout << "up" << endl;
+		}
+		else
+		{
+				cout << "still" << endl;
+		}
+
 }
 int main()
 {
@@ -212,7 +212,7 @@ int main()
 
 						//cv::VideoCapture cap("../test_video/poster.mp4");
 						cv::VideoCapture cap(0);
-				//		int frameCnt = cap.get(CV_CAP_PROP_FRAME_COUNT);
+						//		int frameCnt = cap.get(CV_CAP_PROP_FRAME_COUNT);
 						double video_w = cap.get(CV_CAP_PROP_FRAME_WIDTH);//get the pixel size of the camera
 						double video_h = cap.get(CV_CAP_PROP_FRAME_HEIGHT);//macOS is 1280*720
 						cout << video_w << " " << video_h << endl;
@@ -299,20 +299,20 @@ int main()
 														init = 0;
 														/*
 #ifdef OPENCV_FACE_RENDER
-														render_face(temp, shape, 0, 0); //draw the face landmark
+render_face(temp, shape, 0, 0); //draw the face landmark
 
-														image_points = get_2d_image_points(shape, 0, 0);
+image_points = get_2d_image_points(shape, 0, 0);
 
-														cv::solvePnP(model_points, image_points, camera_matrix, dist_coeffs, rotation_vector, translation_vector);
-														nose_end_point3D.push_back(cv::Point3d(0, 0, 1000.0));
+cv::solvePnP(model_points, image_points, camera_matrix, dist_coeffs, rotation_vector, translation_vector);
+nose_end_point3D.push_back(cv::Point3d(0, 0, 1000.0));
 
-														cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
-														cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
+cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
+cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
 
 														//cout << "Rotation Vector " << endl << rotation_vector << endl;
 														//cout << "Translation Vector" << endl << translation_vector << endl;
 														quadrant (image_points, nose_end_point2D );
-														
+
 														//cout << "nose pose:"<< nose_end_point2D[0] << endl;
 														//---------------------
 #endif
@@ -364,10 +364,10 @@ int main()
 												cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
 
 												Rodrigues(rotation_vector,rotation_matrix);
-                            					getEulerAngles(rotation_matrix,eulerAngles);
+												getEulerAngles(rotation_matrix,eulerAngles);
 
 												quadrant (eulerAngles);
-												
+
 
 
 										}
@@ -383,41 +383,41 @@ int main()
 															 );
 										}
 								}
-						else
-						{
-								face_detected = 0;
+								else
+								{
+										face_detected = 0;
+								}
+								count++;
+								if(count % 50 == 0)
+								{
+										fps = FPScal(count, fps, iDifference, &currentTime, &startTime);
+								}
+								// Display it all on the screen
+								cv::putText(temp, cv::format("fps %.3f", fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
+								/*    if ( count == 100)
+									  {
+									  printf("%lf",cv::getTickFrequency());
+									  t = ((double)cv::getTickCount() - t)/cv::getTickFrequency();
+									  fps = 100.0/t;
+									  count = 0;
+									  }
+									  */
+								win.clear_overlay();
+								win.set_image(im_display);
 						}
-						count++;
-						if(count % 20 == 0)
-						{
-								fps = FPScal(count, fps, iDifference, &currentTime, &startTime);
-						}
-						// Display it all on the screen
-						cv::putText(temp, cv::format("fps %.3f", fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
-						/*    if ( count == 100)
-							  {
-							  printf("%lf",cv::getTickFrequency());
-							  t = ((double)cv::getTickCount() - t)/cv::getTickFrequency();
-							  fps = 100.0/t;
-							  count = 0;
-							  }
-							  */
-						win.clear_overlay();
-						win.set_image(im_display);
 				}
 		}
-}
-catch(serialization_error &e)
-{
-		cout << "You need dlib's default face landmarking model file to run this example." << endl;
-		cout << "You can get it from the following URL: " << endl;
-		cout << "   http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2" << endl;
-		cout << endl << e.what() << endl;
-}
-catch(exception &e)
-{
-		cout << e.what() << endl;
-}
+		catch(serialization_error &e)
+		{
+				cout << "You need dlib's default face landmarking model file to run this example." << endl;
+				cout << "You can get it from the following URL: " << endl;
+				cout << "   http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2" << endl;
+				cout << endl << e.what() << endl;
+		}
+		catch(exception &e)
+		{
+				cout << e.what() << endl;
+		}
 
 }
 
