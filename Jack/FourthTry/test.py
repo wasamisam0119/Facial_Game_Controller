@@ -8,7 +8,7 @@ m = PyMouse()
 k = PyKeyboard()
 i = 0
 
-fifo = open("testpipe")
+fifo = open("/Users/Jack/Git/dlib/examples/build/testpipe")
 
 while 1:
   line=fifo.read()
