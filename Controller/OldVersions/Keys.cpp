@@ -1,9 +1,9 @@
+#include <Windows.h>
 #include "Keys.h"
 
 using namespace std;
 
 INPUT ip;
-INPUT im;
 
 void setup() {
 	//Set up keyboard event
@@ -16,6 +16,9 @@ void setup() {
 void release() {
 	//Release key
 	ip.ki.dwFlags = KEYEVENTF_KEYUP;
+	SendInput(1, &ip, sizeof(INPUT));
+}
+void input() {
 	SendInput(1, &ip, sizeof(INPUT));
 }
 void up() {
@@ -57,33 +60,4 @@ void aRight() {
 	ip.ki.dwFlags = 0;
 	ip.ki.wVk = 0x27;
 	input();
-}
-void input() {
-	SendInput(1, &ip, sizeof(INPUT));
-}
-
-void mouseSetup() {
-	//Setup mouse event
-	im.type = INPUT_MOUSE;
-}
-void mouseLeft() {
-	im.mi.dwFlags = MOUSEEVENTF_LEFTDOWN;
-	inputMouse();
-	mouseLeftUp();
-}
-void mouseLeftUp() {
-	im.mi.dwFlags = MOUSEEVENTF_LEFTUP;
-	inputMouse();
-}
-void mouseRight() {
-	im.mi.dwFlags = MOUSEEVENTF_RIGHTDOWN;
-	inputMouse();
-	mouseRightUp();
-}
-void mouseRightUp() {
-	im.mi.dwFlags = MOUSEEVENTF_RIGHTUP;
-	inputMouse();
-}
-void inputMouse() {
-	SendInput(1, &im, sizeof(INPUT));
 }
