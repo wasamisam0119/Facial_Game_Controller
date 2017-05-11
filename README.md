@@ -12,16 +12,21 @@ The controller will be made to interact with DosBox in order to play retro games
 
 ### Requirements
 - Windows
-  - C++ Boost Library version 1.6.2 or later
-- Available [here](www.boost.org)
-  - CMake version 2.8.4 or later
-- Available [here](www.cmake.org)
-  - C++ Dlib version 19.2 or later
+- C++ Boost Library version 1.6.2 or later
+  - Available [here](www.boost.org)
+  - Or at `www.boost.org`
+- CMake version 2.8.4 or later
+  - Available [here](www.cmake.org)
+  - Or at `www.cmake.org`
+- C++ Dlib version 19.2 or later
   - Available [here](www.dlib.net)
-  - A C++11 compiler (Visual Studio is recommended)
-- Available [here](www.visualstudio.com/free-developer-offers)
-  - OpenCV
-- Available [here](www.opencv.org)
+  - Or at `www.dlib.net`
+- A C++11 compiler (Visual Studio is recommended)
+  - Available [here](www.visualstudio.com/free-developer-offers)
+  - Or at `www.visualstudio.com/free-developer-offers`
+- OpenCV
+  - Available [here](www.opencv.org)
+  - Or at `www.opencv.org`
 
 ### Installation
   1. Install CMake.
