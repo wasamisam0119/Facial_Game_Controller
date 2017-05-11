@@ -100,7 +100,7 @@ int vaildSpace(int *x, int *y, double *w, double *h, int video_w, int video_h)
 
 }
 
-//draw head pose --yehan
+/*This function returns the 3D coordinates of five key points into modelPoints*/
 std::vector<cv::Point3d> get_3d_model_points()
 {
 		std::vector<cv::Point3d> modelPoints;
@@ -116,6 +116,7 @@ std::vector<cv::Point3d> get_3d_model_points()
 
 }
 
+/*This function saves the real-time 2D coordinates of five key points into image_points*/
 std::vector<cv::Point2d> get_2d_image_points(full_object_detection &d, int offset_x, int offset_y)
 {
 		std::vector<cv::Point2d> image_points;
@@ -129,13 +130,14 @@ std::vector<cv::Point2d> get_2d_image_points(full_object_detection &d, int offse
 
 }
 
-//yehan
+/*Set a generic parameter of camera*/
 cv::Mat get_camera_matrix(float focal_length, cv::Point2d center)
 {
 		cv::Mat camera_matrix = (cv::Mat_<double>(3, 3) << focal_length, 0, center.x, 0 , focal_length, center.y, 0, 0, 1);
 		return camera_matrix;
 }
 
+/*Get the euler angles from processed rotation matrix*/
 void getEulerAngles(cv::Mat &rotCamerMatrix,cv::Vec3d &eulerAngles){
 
 		cv::Mat cameraMatrix,rotMatrix,transVect,rotMatrixX,rotMatrixY,rotMatrixZ;
@@ -154,35 +156,57 @@ void getEulerAngles(cv::Mat &rotCamerMatrix,cv::Vec3d &eulerAngles){
 						eulerAngles);
 }
 
-//identify the direction of vector
-void quadrant (cv::Vec3d eulerAngles)
+/*
+This function converts the specfic angel to head movements
+Interface of Keyboard function
+*/
+int quadrant (cv::Vec3d eulerAngles)
 {
-		float yaw = eulerAngles[1];
-		float pitch = eulerAngles[0];
+    float yaw = eulerAngles[1];
+    float pitch = eulerAngles[0];
+    float roll = eulerAngles[2];
 
-		if (yaw < -30)
-		{
-				cout << "left" << endl;     //mirror reflection
-		}
-		if (yaw > 30)
-		{
-				cout << "right" << endl;
-		}
+   
+        if (yaw < -27)
+        {
+            cout << "left" << endl;     //mirror reflection
+            return 2;
+        }
+        else if (yaw > 27)
+        {
+            cout << "right" << endl;
+            return 3;
+        }
+        else if (pitch<0 && pitch>-168)
+        {
+            cout << "down" << endl;
+            return 0;
 
-		if (pitch<0 && pitch>-170)
+        }
+        else if (pitch<168 && pitch>0)
+        {
+            cout << "up" << endl;
+            return 1;
+        }
+        else if (roll<-25)
 		{
-				cout << "down" << endl;
+			cout <<"roll right"<< endl;
+			//cout <<roll<<endl;
+			return 4;
 		}
-		if (pitch<165 && pitch>0)
+		else if(roll>25)
 		{
-				cout << "up" << endl;
+			cout <<"roll left"<< endl;
+			//cout <<roll<<endl;
+			return 5;
 		}
-		else
-		{
-				cout << "still" << endl;
-		}
-
+        else
+        {
+        	cout << "still" << endl;
+        	return 6;
+        }
 }
+
 int main()
 {
 		int left_top_x, left_top_y, right_bottom_x, right_bottom_y, x, y, offset_x, offset_y;
@@ -196,7 +220,7 @@ int main()
 		string number;
 		fstream file;
 		double fps;
-
+		char direction[20]="";
 		try
 		{
 				for(int c = 2; c < 112; c++)
@@ -210,8 +234,11 @@ int main()
 						int count = 0; //count the frame
 						int face_detected = 0; //check if the detector detecte the face
 
-						//cv::VideoCapture cap("../test_video/poster.mp4");
-						cv::VideoCapture cap(0);
+						/* ===========code for video test==============
+						cv::VideoCapture cap("../test_video/video.avi");
+						*/
+						cv::VideoCapture cap("../test_video/vid.avi");
+						//cv::VideoCapture cap(0);
 						//		int frameCnt = cap.get(CV_CAP_PROP_FRAME_COUNT);
 						double video_w = cap.get(CV_CAP_PROP_FRAME_WIDTH);//get the pixel size of the camera
 						double video_h = cap.get(CV_CAP_PROP_FRAME_HEIGHT);//macOS is 1280*720
@@ -245,7 +272,7 @@ int main()
 								std::vector<full_object_detection> shapes;
 								full_object_detection shape;
 
-								// Pose estimation --yehan
+								// Pose estimation variables
 								std::vector<cv::Point3d> model_points;
 								std::vector<cv::Point2d> image_points;
 								cv::Mat rotation_vector;
@@ -254,9 +281,11 @@ int main()
 								cv::Mat translation_vector;
 								std::vector<cv::Point3d> nose_end_point3D;
 								std::vector<cv::Point2d> nose_end_point2D;
-								double focal_length = temp.cols;;
+								double focal_length = temp.cols;
+								model_points = get_3d_model_points();
 								cv::Mat camera_matrix = get_camera_matrix(focal_length, cv::Point2d(temp.cols / 2, temp.rows / 2));;
 								cv::Mat dist_coeffs = cv::Mat::zeros(4, 1, cv::DataType<double>::type);
+
 								/*
 								   if it is second time and the coordinates is in the picture size,
 								   crop the image and the detector will only detecte the face within the cropped image
@@ -277,10 +306,8 @@ int main()
 										init = 1;
 										second_time = 0;
 								}
-								faces = detector(cimg);
-
-								//yehan
-								model_points = get_3d_model_points();
+								faces = detector(cimg);					
+								
 
 								if (faces.size() > 0)
 								{
@@ -357,18 +384,45 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 														image_points = get_2d_image_points(shape, offset_x, offset_y);
 
 												}
+												//get the rotation function through the correspondences between 3D and 2D points
 												cv::solvePnP(model_points, image_points, camera_matrix, dist_coeffs, rotation_vector, translation_vector);
+												
+												/*Draw a line from nose to 3D point to illustrate the rotation*/
 												nose_end_point3D.push_back(cv::Point3d(0, 0, 1000.0));
-
 												cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
 												cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2);
 
 												Rodrigues(rotation_vector,rotation_matrix);
 												getEulerAngles(rotation_matrix,eulerAngles);
-
-												quadrant (eulerAngles);
-
-
+												
+												/*
+												Print the real time result on screen
+												*/
+												switch (quadrant (eulerAngles))
+												{
+													case 0:
+														strcpy(direction,"Down");
+														break;
+													case 1:
+														strcpy(direction,"Up");
+														break;
+													case 2:
+														strcpy(direction,"Left");
+														break;
+													case 3:
+														strcpy(direction,"Right");
+														break;
+													case 4:
+														strcpy(direction,"Roll right");
+														break;
+													case 5:
+														strcpy(direction,"Roll left");
+														break;
+													case 6:
+														strcpy(direction,"Still");
+														break;
+												}
+												cv::putText(temp, cv::format("Direction: %s",direction), cv::Point(50, size.height - 25), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 2);
 
 										}
 										//printf("%d %d\n",left_top_x,left_top_y);
@@ -393,7 +447,7 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 										fps = FPScal(count, fps, iDifference, &currentTime, &startTime);
 								}
 								// Display it all on the screen
-								cv::putText(temp, cv::format("fps %.3f", fps), cv::Point(50, size.height - 50), cv::FONT_HERSHEY_COMPLEX, 1.5, cv::Scalar(0, 0, 255), 3);
+								cv::putText(temp, cv::format("Fps %.3f", fps), cv::Point(50, size.height - 60), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 2);
 								/*    if ( count == 100)
 									  {
 									  printf("%lf",cv::getTickFrequency());
