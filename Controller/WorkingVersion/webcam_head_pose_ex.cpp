@@ -258,7 +258,6 @@ int main()
 						deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
 						std::vector<rectangle> faces;
 						// Grab and process frames until the main window is closed by the user.
-						double time = cv::getTickCount();
 						while(!win.is_closed())
 						{
 								cv::Mat croppedImage;
@@ -434,14 +433,8 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 								{
 										face_detected = 0;
 								}
-								if(count % 100 == 0)
-								{
-										time = ((double)cv::getTickCount() - time)/cv::getTickFrequency();
-										fps = 100.0/time;	
-								}
 								count++;
 								// Display the fps dashboard on the screen
-								cv::putText(temp, cv::format("Fps %.3f", fps), cv::Point(50, size.height - 60), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 2);
 								win.clear_overlay();
 								win.set_image(im_display);
 						}
