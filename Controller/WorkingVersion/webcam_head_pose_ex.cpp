@@ -23,7 +23,6 @@
 	2011.  SSE4 is the next fastest and is supported by most current machines.
 	*/
 
-//This version only print the coordinates of points
 #include <math.h>
 #include <dlib/opencv.h>
 #include <opencv2/opencv.hpp>
@@ -165,8 +164,6 @@ int quadrant (cv::Vec3d eulerAngles)
     float yaw = eulerAngles[1];
     float pitch = eulerAngles[0];
     float roll = eulerAngles[2];
-
-   
         if (yaw < -27)
         {
 			left();
@@ -226,23 +223,16 @@ int main()
 		double *h = &height;
 		string number;
 		fstream file;
-		double fps;
+		double fps = 0;
 		char direction[20]="";
 		setup();
 		mouseSetup();
 		try
 		{
-				for(int c = 2; c < 112; c++)
-				{
-						cout << "video number is " << c << endl;
-						long double iDifference = 1.000;
-						struct timeval startTime, currentTime;
-						number = to_string(c);
 						int second_time = 0;
 						int init = 1;
 						int count = 0; //count the frame
 						int face_detected = 0; //check if the detector detecte the face
-
 						/* ===========code for video test==============
 						cv::VideoCapture cap("../test_video/video.avi");
 						*/
@@ -267,8 +257,8 @@ int main()
 						shape_predictor pose_model;
 						deserialize("shape_predictor_68_face_landmarks.dat") >> pose_model;
 						std::vector<rectangle> faces;
-
 						// Grab and process frames until the main window is closed by the user.
+						double time = cv::getTickCount();
 						while(!win.is_closed())
 						{
 								cv::Mat croppedImage;
@@ -359,27 +349,23 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 												{
 														if (second_time == 1)
 														{
+																//calculate offset
 																offset_x = initial_x;
 																offset_y = initial_y;
-																//offset_x=initial_x-centre_point_x;    //calculate offset
-																//offset_y=initial_y-centre_point_y;
 														}
 														left_top_x = shape.part(0).x() + offset_x;
 														left_top_y = shape.part(18).y() + offset_y;
 														right_bottom_x += offset_x;
 														right_bottom_y += offset_y;
-														//cout<<right_bottom_x<<"right_bottom_x and y"<<right_bottom_y<<endl;
-
 														if (second_time > 0)
 														{
 																left_top_x *= 0.6;
 																left_top_y *= 0.65;
-																//initial_x=centre_point_x+offset_x;
-																//
-																//initial_y=centre_point_y+offset_y;
 														}
 														second_time++;
 												}
+												// the factor of 1.4 and 1.2 is based on several user experience, 
+												// and we find this can be a suitable value for enlarge the bounding box
 												width = 1.4 * (right_bottom_x - left_top_x);
 												height = 1.2 * (right_bottom_y - left_top_y);
 												shapes.push_back(shape);
@@ -395,7 +381,7 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 												}
 												//get the rotation function through the correspondences between 3D and 2D points
 												cv::solvePnP(model_points, image_points, camera_matrix, dist_coeffs, rotation_vector, translation_vector);
-												
+
 												/*Draw a line from nose to 3D point to illustrate the rotation*/
 												nose_end_point3D.push_back(cv::Point3d(0, 0, 1000.0));
 												cv::projectPoints(nose_end_point3D, rotation_vector, translation_vector, camera_matrix, dist_coeffs, nose_end_point2D);
@@ -403,39 +389,37 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 
 												Rodrigues(rotation_vector,rotation_matrix);
 												getEulerAngles(rotation_matrix,eulerAngles);
-												
+
 												/*
-												Print the real time result on screen
-												*/
+												   Print the real time result on screen
+												   */
 												switch (quadrant (eulerAngles))
 												{
-													case 0:
-														strcpy(direction,"Down");
-														break;
-													case 1:
-														strcpy(direction,"Up");
-														break;
-													case 2:
-														strcpy(direction,"Left");
-														break;
-													case 3:
-														strcpy(direction,"Right");
-														break;
-													case 4:
-														strcpy(direction,"Roll right");
-														break;
-													case 5:
-														strcpy(direction,"Roll left");
-														break;
-													case 6:
-														strcpy(direction,"Still");
-														break;
+														case 0:
+																strcpy(direction,"Down");
+																break;
+														case 1:
+																strcpy(direction,"Up");
+																break;
+														case 2:
+																strcpy(direction,"Left");
+																break;
+														case 3:
+																strcpy(direction,"Right");
+																break;
+														case 4:
+																strcpy(direction,"Roll right");
+																break;
+														case 5:
+																strcpy(direction,"Roll left");
+																break;
+														case 6:
+																strcpy(direction,"Still");
+																break;
 												}
 												cv::putText(temp, cv::format("Direction: %s",direction), cv::Point(50, size.height - 25), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 2);
 
 										}
-										//printf("%d %d\n",left_top_x,left_top_y);
-										//printf("%d %d\n",x,y );
 										if (vaildSpace(x1, y1, w, h, video_w, video_h))
 										{
 												cv::rectangle(
@@ -450,25 +434,17 @@ cv::line(temp, image_points[0], nose_end_point2D[0], cv::Scalar(255, 255, 0), 2)
 								{
 										face_detected = 0;
 								}
-								count++;
-								if(count % 50 == 0)
+								if(count % 100 == 0)
 								{
-										fps = FPScal(count, fps, iDifference, &currentTime, &startTime);
+										time = ((double)cv::getTickCount() - time)/cv::getTickFrequency();
+										fps = 100.0/time;	
 								}
-								// Display it all on the screen
+								count++;
+								// Display the fps dashboard on the screen
 								cv::putText(temp, cv::format("Fps %.3f", fps), cv::Point(50, size.height - 60), cv::FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0, 0, 255), 2);
-								/*    if ( count == 100)
-									  {
-									  printf("%lf",cv::getTickFrequency());
-									  t = ((double)cv::getTickCount() - t)/cv::getTickFrequency();
-									  fps = 100.0/t;
-									  count = 0;
-									  }
-									  */
 								win.clear_overlay();
 								win.set_image(im_display);
 						}
-				}
 		}
 		catch(serialization_error &e)
 		{
