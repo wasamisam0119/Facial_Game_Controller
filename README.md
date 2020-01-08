@@ -1,9 +1,4 @@
-# G52GRP Project Group 27
-
-## Extra project resources
-* Trello Board : https://trello.com/gameface5
-* Google Drive document storage: https://drive.google.com/drive/folders/0B5RShekiv6-4czBlVEpybmN0XzQ?usp=sharing
-
+# G52GRP Project
 
 ## Project Overview  
 Create a controller that uses facial tracking in use for different video games.
