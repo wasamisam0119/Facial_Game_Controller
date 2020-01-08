@@ -36,8 +36,8 @@ The controller will be made to interact with DosBox in order to play retro games
   10. For the source code, select the `dlib/Face` folder
   11. Build the binaries in that folder
   12. Press 'Configure' and wait for completion  
-     If you get an error saying that OpenCV is not found, find the `OpenCV_DIR` variable and change the path to
-     point to your OpenCV build folder
+      If you get an error saying that OpenCV is not found, find the `OpenCV_DIR` variable and change the path to
+      point to your OpenCV build folder
   13. Generate the code
   14. Once the code is generated, press 'Open Project'
   15. Run the Visual Studio project file from the \verb|dlib/build| folder and build the project inside Visual Studio
@@ -53,8 +53,12 @@ The controller will be made to interact with DosBox in order to play retro games
     - Roll left: left-click (mouse 0)
     - Roll right: right-click (mouse 1)
 
-### Notes: Facial Recgnization Speedup Testing Result
+### Facial Recgnization Speedup Testing Result
 
 Original Speed(fps) using dlib is usually between 5~8, now it is increse to more than 20 when playing video.
 
 ![example1](https://github.com/wasamisam0119/Facial_Game_Controller/blob/master/test_capture.png) 
+
+### Demo
+
+![demo](https://github.com/wasamisam0119/Facial_Game_Controller/blob/master/demo.jpg) 
